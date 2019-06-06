@@ -1,0 +1,77 @@
+.toolbar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+    height: 56px;
+    color: white;
+}
+
+.toolbarnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    color: white;
+
+}   
+
+.toolbarlogo {
+
+margin-left: 1rem;
+}
+
+.toolbarlogoimg {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.toolbarlogo a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.toolbarnavitems {
+    color: white;
+    text-decoration: none;
+}
+
+.toolbarnavitems ul {
+    color: white;
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.toolbarnavitems li {
+    
+padding: 0 .5rem;
+
+}
+
+.spacer {
+    flex: 1;
+}
+.toolbarnavitems a:hover,
+.toolbarnavitems a:active  {
+    color: black;
+}
+
+.alinks {
+    color: white;
+}
+
+
+/* @media (max-width: 768px) {
+.toolbarnavitems {
+    display: none;
+}
+} */
+
+
+

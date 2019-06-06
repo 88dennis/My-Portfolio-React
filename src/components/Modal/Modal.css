@@ -1,0 +1,40 @@
+.modal {
+    width: 90%;
+    max-width: 90%;
+    
+    background: gray;
+    box-shadow: 0 2px 8px rgba(0,0,0, .26);
+    position: absolute;
+    top: 5vh;
+    left: 5%;
+    z-index: 200;
+    /* overflow: auto; */
+}
+
+.modalheader {
+    padding: 1rem;
+    background: darkgray;
+    color:white;
+}
+
+.modalheader h1 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.modalcontent {
+    padding: 1rem;
+}
+
+.modalactions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 30rem;
+        left: calc((100% - 30rem)/ 2);
+    }
+}
