@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://88dennis.github.io/my-portfolio-react/",
+  "proxy": "http://localhost:3006/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
