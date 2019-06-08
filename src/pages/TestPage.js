@@ -136,7 +136,7 @@ if(this.state.y <=50){
       <div style= {styles.titleContainerStyle} className="titleContainer"
       ref='titleContainer'
       onWheel={this._onWheel}
-      onMouseMove={this._onMouseMove}
+      // onMouseMove={this._onMouseMove}
       >
         <nav className={showClass}
         >
