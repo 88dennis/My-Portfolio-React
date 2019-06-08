@@ -18,7 +18,7 @@ const styles = ({
 
 class TestPage extends Component {
   state = {
-      visible: false,
+      visible: true,
       width: 0,
       height:0,
       x: 0,
@@ -27,33 +27,35 @@ class TestPage extends Component {
 
   };
 
+  // _onMouseMove = (e, ) => {
+  //     const width = this.refs.titleContainer.clientWidth
+  //     const height = this.refs.titleContainer.clientHeight
+  //     const oX = Math.floor((e.nativeEvent.offsetX/width) * 100);
+  //     const oY = Math.floor((e.nativeEvent.offsetY/height) *100);
 
+  //     console.log(this.refs)
+  //       console.log(e.nativeEvent)
+  //     console.log(oX, oY)
+  //     if(oY <=10){
+  //       this.setState({
+  //           visible: true
+  //     x: oX,
+  //     y: oY
+  //       })
+  //     }else{
+  //       this.setState({
+  //           visible: false
+  //     x: oX,
+  //     y: oY
+  //       })
+  //     }
 
-  _onMouseMove = (e, ) => {
-      const width = this.refs.titleContainer.clientWidth
-      const height = this.refs.titleContainer.clientHeight
-      const oX = Math.floor((e.nativeEvent.offsetX/width) * 100);
-      const oY = Math.floor((e.nativeEvent.offsetY/height) *100);
+  //   // this.setState ({
+  //   //     x: oX,
+  //   //     y: oY
+  //   // })
 
-    //   console.log(this.refs)
-        console.log(e.nativeEvent)
-      console.log(oX, oY)
-      if(oY <=10){
-        this.setState({
-            visible: true
-        })
-      }else{
-        this.setState({
-            visible: false
-        })
-      }
-
-    // this.setState ({
-    //     x: oX,
-    //     y: oY
-    // })
-
-  }
+  // }
 
     // YOU CAN ALSO USE ONMOUSEWHEEL
   _onWheel = (e) => {
@@ -66,39 +68,43 @@ class TestPage extends Component {
     console.log(deltaWye)
     if(deltaWye < 0){
       this.setState({
+        dY: deltaWye,
           visible: true
       })
     }else{
       this.setState({
+        dY: deltaWye,
           visible: false
       })
     }
   }
-  _onSwipe = (e) => {
-    const width = this.refs.titleContainer.clientWidth
-    const height = this.refs.titleContainer.clientHeight
-    const oX = Math.floor((e.nativeEvent.offsetX/width) * 100);
-    const oY = Math.floor((e.nativeEvent.offsetY/height) *100);
 
-  //   console.log(this.refs)
-      console.log(e.nativeEvent)
-    console.log(oX, oY)
-    if(oY <=30){
-      this.setState({
-          visible: true
-      })
-    }else{
-      this.setState({
-          visible: false
-      })
-    }
+//   _onSwipe = (e) => {
+//     const width = this.refs.titleContainer.clientWidth
+//     const height = this.refs.titleContainer.clientHeight
+//     const oX = Math.floor((e.nativeEvent.offsetX/width) * 100);
+//     const oY = Math.floor((e.nativeEvent.offsetY/height) *100);
 
-  // this.setState ({
-  //     x: oX,
-  //     y: oY
-  // })
+//   //   console.log(this.refs)
+//       console.log(e.nativeEvent)
+//     console.log(oX, oY)
 
-}
+//     if(oY <=30){
+//       this.setState({
+//           visible: true
+//       })
+//     }else{
+//       this.setState({
+//           visible: false
+//       })
+//     }
+
+//   // this.setState ({
+//   //     x: oX,
+//   //     y: oY
+//   // })
+
+// }
 
   handleHideShowNav = () => {
     const newState = {...this.state} 
@@ -117,13 +123,10 @@ class TestPage extends Component {
 //     });
 //   };
 
-  
- 
   render() {
     let showClass = 'navbar';
     if(!this.state.visible) {
 showClass = 'navbar navbar--hidden'
-
 if(this.state.y <=50){
     showClass = 'navbar navbar--hidden'
 }
@@ -133,11 +136,10 @@ if(this.state.y <=50){
       <div style= {styles.titleContainerStyle} className="titleContainer"
       ref='titleContainer'
       onWheel={this._onWheel}
-    //   onMouseMove={this._onMouseMove}
+      onMouseMove={this._onMouseMove}
       >
         <nav className={showClass}
         >
-        
         <a href="/">ITEM    </a>
         <a href="/">ITEM</a>
         <a href="/">ITEM</a>

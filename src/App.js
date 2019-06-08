@@ -9,7 +9,7 @@ import TransactionHistoryPage  from "./pages/TransactionHistoryPage";
 import NotificationsPage  from "./pages/NotificationsPage";
 import GetHelpPage  from "./pages/GetHelpPage";
 import NoMatch from "./pages/NoMatch";
-import TestPage from "./pages/TestPage2";
+import TestPage from "./pages/TestPage";
 
 function App() {
   return (
