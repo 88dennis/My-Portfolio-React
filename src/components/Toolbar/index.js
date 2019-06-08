@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css";
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import logo from '../../images/logotrans.png';
+import logo from '../../images/DS3.png';
 // import drawerToggle from "./components/SideDrawer/DrawerToggleButton.js";
 // import { Link } from "react-router-dom";
 

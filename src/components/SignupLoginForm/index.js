@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../images/logotrans.png';
+// import logo from '../../images/logotrans.png';
 import "./style.css";
 
 
@@ -19,7 +19,7 @@ function SignupLoginForm({ showMe, hideShow, username, firstName,
             <div className="logocont2">
               <div className="logocirclewrap1">
                 <div className="logocirclewrap2">
-                  <img className="logoimghome" src={logo} alt="Logo" />
+                  {/* <img className="logoimghome" src={logo} alt="Logo" /> */}
                 </div>
               </div>
             </div>

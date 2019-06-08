@@ -6,7 +6,7 @@ import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
 import ProfilePicture from "../components/ProfilePicture";
-import logo from '../images/logotrans.png';
+import logo from '../images/DS2.png';
 
 import { Link } from "react-router-dom";
 import "./style.css";

@@ -5,10 +5,45 @@ import SignupLoginForm from "../components/SignupLoginForm";
 // import logo from ''./logo.png";
 
 import { Container } from "../components/Grid";
-import logo from '../images/logotrans.png';
+import logo from '../images/DS3.png';
+
+// const divStyle = {
+//   fontSize: '25px',
+//   textAlign: "center"
+// };
+
+const styles = ({
+  divStyle: {
+    fontSize: '25px',
+    textAlign: "center",
+    fontFamily: 'arial',
+  },
+
+  divStyle2: {
+    fontSize: '20px',
+    textAlign: "center"
+  },
+
+});
+
+const styleHeader = {
+  backgroundColor: '#fff',
+  padding: '10px',
+  textDecoration: 'none',
+  position: 'fixed',
+  width: '100%',
+  zIndex: '2',
+  top: '0',
+  height: '30px',
+  boxShadow: '0px 1px 7px 0px rgba(0, 0, 0, 0.4)',
+  display: 'flex',
+  transition: 'top 0.2s ease-in-out',
+};
 
 class SignupLogin extends Component {
   state = {
+    styleHeader: styleHeader,
+    isScrolling: false,
     showMe: false,
     username: "",
     firstName: "",
@@ -21,8 +56,47 @@ class SignupLogin extends Component {
     loggedIn: false,
     loginMessage: "",
     signupMessage: "",
-    redirectTo: null
+    redirectTo: null,
+    isHide: false,
   }
+
+ 
+//   hideBar = () => {
+//     const { isHide } = this.state
+
+//     window.scrollY > this.prev ?
+//     !isHide && this.setState({ isHide: true })
+//     :
+//     isHide && this.setState({ isHide: false });
+
+//     this.prev = window.scrollY;
+//  }
+//   componentDidMount(){
+//     window.addEventListener('scroll', this.hideBar);
+// }
+
+// componentWillUnmount(){
+//      window.removeEventListener('scroll', this.hideBar);
+// }
+
+// componentDidMount() {
+//   window.addEventListener("scroll", this.onScroll);
+// }
+
+// componentWillUnmount() {
+//   window.removeEventListener("scroll", this.onScroll);
+// }
+
+// onScroll = () => {
+//   this.setState({ isScrolling: true });
+
+//   clearTimeout(this.timeout);
+
+//   this.timeout = setTimeout(() => {
+//     this.setState({ isScrolling: false });
+//   }, 200);
+// };
+
 
   hideShow = () => {
     const newState = { ...this.state }
@@ -58,8 +132,23 @@ class SignupLogin extends Component {
     if (this.state.redirectTo) {
       return <Redirect to={{ pathname: this.state.redirectTo }} />
     }
+
+    // const classHide = this.state.isHide ? 'hide' : '';
     return (
       <Container>
+
+{/* <div style={this.state.styleHeader}>
+asdasd
+</div> */}
+
+{/* <div className={`topbar ${classHide}`}>topbar</div> */}
+
+{/* <div style={{ height: 500, overflowY: "scroll" }}>
+        <div style={{ paddingTop: 50 }}>
+          {this.state.isScrolling ? "Hidden" : "Shown"}
+        </div>
+      </div> */}
+        
         <div className="homepagewrap">
         {/* LOGO START */}
         <div className="logocont">
@@ -77,14 +166,19 @@ class SignupLogin extends Component {
         {/* APP DESCRIPTION STARTS */}
         <div className="descwrap1">
           <div className="descwrap2">
-            <p>Keep your Money | Keep your Friends</p>
+          <div style={styles.divStyle}>
+            <p>Looking for Web Designs?</p>
+            </div>
             <br></br>
-            <p>What is UO?
-                UO is financial app that keeps track of the money you have lent and borrowed. Forget
-                the uncomfortable conversation of money, UO automates reminders and logs transactions so you
-                can keep
-                your money and your friends.
-            </p>
+          <div style={styles.divStyle}>
+            <p>Welcome to Sarmiento Dev!</p>
+            </div>
+            <br></br>
+          <div style={styles.divStyle2}>
+            <p>Design | Development</p>
+            </div>
+            <br></br>
+ 
           </div>
         </div>
         <br></br>

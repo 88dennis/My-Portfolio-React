@@ -9,6 +9,7 @@ import TransactionHistoryPage  from "./pages/TransactionHistoryPage";
 import NotificationsPage  from "./pages/NotificationsPage";
 import GetHelpPage  from "./pages/GetHelpPage";
 import NoMatch from "./pages/NoMatch";
+import TestPage from "./pages/TestPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/transactionhistorypage" component={TransactionHistoryPage} />
           <Route exact path="/settingspage" component={SettingsPage} />
           <Route exact path="/gethelppage" component={GetHelpPage} />
+          <Route exact path="/testpage" component={TestPage} />
 
           <Route component={NoMatch} />
         </Switch>
