@@ -14,24 +14,91 @@ const styles = ({
         height: '900px',
         background: 'gray'
     }
-  
   });
 
 class TestPage extends Component {
   state = {
-      visible: true,
+      visible: false,
       width: 0,
       height:0,
+      x: 0,
+      y: 0,
+      dY:0
+
   };
+
+
 
   _onMouseMove = (e, ) => {
       const width = this.refs.titleContainer.clientWidth
       const height = this.refs.titleContainer.clientHeight
-      const oX = (e.nativeEvent.offsetX/width) * 100;
-      const oY = (e.nativeEvent.offsetY/height) *100;
+      const oX = Math.floor((e.nativeEvent.offsetX/width) * 100);
+      const oY = Math.floor((e.nativeEvent.offsetY/height) *100);
+
     //   console.log(this.refs)
-      console.log(Math.floor(oX), Math.floor(oY))
+        console.log(e.nativeEvent)
+      console.log(oX, oY)
+      if(oY <=10){
+        this.setState({
+            visible: true
+        })
+      }else{
+        this.setState({
+            visible: false
+        })
+      }
+
+    // this.setState ({
+    //     x: oX,
+    //     y: oY
+    // })
+
   }
+
+    // YOU CAN ALSO USE ONMOUSEWHEEL
+  _onWheel = (e) => {
+
+    const height = this.refs.titleContainer.clientHeight
+    const deltaWye = e.nativeEvent.deltaY
+  //   console.log(this.refs)
+      console.log(e.nativeEvent)
+      console.log(height)
+    console.log(deltaWye)
+    if(deltaWye < 0){
+      this.setState({
+          visible: true
+      })
+    }else{
+      this.setState({
+          visible: false
+      })
+    }
+  }
+  _onSwipe = (e) => {
+    const width = this.refs.titleContainer.clientWidth
+    const height = this.refs.titleContainer.clientHeight
+    const oX = Math.floor((e.nativeEvent.offsetX/width) * 100);
+    const oY = Math.floor((e.nativeEvent.offsetY/height) *100);
+
+  //   console.log(this.refs)
+      console.log(e.nativeEvent)
+    console.log(oX, oY)
+    if(oY <=30){
+      this.setState({
+          visible: true
+      })
+    }else{
+      this.setState({
+          visible: false
+      })
+    }
+
+  // this.setState ({
+  //     x: oX,
+  //     y: oY
+  // })
+
+}
 
   handleHideShowNav = () => {
     const newState = {...this.state} 
@@ -41,7 +108,6 @@ class TestPage extends Component {
   }
 
 //   handleScroll = () => {
-
 //     const { prevScrollpos } = this.state;
 //     const currentScrollPos = window.pageYOffset;
 //     const visible = prevScrollpos > currentScrollPos;
@@ -51,28 +117,28 @@ class TestPage extends Component {
 //     });
 //   };
 
-//   componentDidMount() {
-//     window.addEventListener("scroll", this.handleScroll);
-//   }
   
-//   componentWillUnmount() {
-//     window.removeEventListener("scroll", this.handleScroll);
-//   }
-
+ 
   render() {
     let showClass = 'navbar';
     if(!this.state.visible) {
 showClass = 'navbar navbar--hidden'
+
+if(this.state.y <=50){
+    showClass = 'navbar navbar--hidden'
+}
     }
 
     return (
       <div style= {styles.titleContainerStyle} className="titleContainer"
       ref='titleContainer'
-      onMouseMove={this._onMouseMove}>
+      onWheel={this._onWheel}
+    //   onMouseMove={this._onMouseMove}
+      >
         <nav className={showClass}
         >
         
-        <a href="/">ITEM</a>
+        <a href="/">ITEM    </a>
         <a href="/">ITEM</a>
         <a href="/">ITEM</a>
         

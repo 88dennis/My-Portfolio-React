@@ -118,10 +118,12 @@ class SettingsPage extends Component {
   }
 
   render() {
+    
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop backDropClick={this.backDropClickHandler} />;
     }
+
     return (
       <div style={{ height: '100%' }}>
         <Toolbar
