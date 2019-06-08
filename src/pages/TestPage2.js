@@ -13,7 +13,7 @@
   
 //   });
 
-// class TestPage extends Component {
+// class TestPage2 extends Component {
 //   state = {
 //     prevScrollpos: window.pageYOffset,
 //       visible: true
@@ -74,4 +74,4 @@
 //   }
 // }
 
-// export default TestPage;
+// export default TestPage2;
