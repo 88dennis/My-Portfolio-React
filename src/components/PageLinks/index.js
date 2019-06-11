@@ -28,7 +28,6 @@ const pagelinks = props => (
       <Link to="/gethelppage"><div className={window.location.pathname === "/gethelppage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
       Get Help </div></Link>
 
-
   </section>
 )
 

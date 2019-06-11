@@ -142,6 +142,8 @@ drawerToggleClickHandler = () => {
         <PageLinks backToSamePage = {this.backDropClickHandler}/>
         </SideDrawer>;
           {backdrop}
+
+          
         <main style={{ marginTop: '100px' }}>
 
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}

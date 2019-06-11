@@ -5,10 +5,22 @@ html, body {
 	box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   overflow: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgb(198, 179, 243))) fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(32, 31, 31)), to(rgb(65, 62, 71))) fixed;
   position: relative;
 }
 
 /* ::-webkit-scrollbar { 
     display: none; 
 } */    
+
+
+/* html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+} */

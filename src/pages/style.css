@@ -1,10 +1,75 @@
 .homepagewrap {
 margin: 0;
 height: 100vh;
-background: -webkit-gradient(linear, left top, left bottom, from(rgb(88, 89, 184)), to(rgb(109, 126, 148))) fixed;
+/* background: -webkit-gradient(linear, left top, left bottom, from(rgb(88, 89, 184)), to(rgb(109, 126, 148))) fixed; */
 
 /* background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(77, 19, 209, 1))) fixed; */
 }
+
+/* LANDING PAGE STYLES */
+
+/* START -- STYLES FOR BUTTON LANDING PAGE */
+.landpagediv {
+  padding: 1rem;
+  color: white;
+}
+
+.landnow a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: blue;
+  color: white;
+}
+
+.landnotnow a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+}
+/* LOGO STYLES END */
+
+.descwrap1 {
+  justify-content: center;
+  display: flex;
+}
+
+.descwrap2 {
+width: 400px;
+color: white;
+font-size: 18px;
+}
+
+.loginsignupbtnhomewrap {
+  justify-content: center;
+  display: flex;
+}
+
+.loginsignupbtnhome {
+border-style: none;
+background-color: transparent;
+font-size: 22px;
+font-family: 'Lato', sans-serif;
+color: white;
+}
+
+.loginsignupbtnhome:hover {
+  color: white;
+  background-color: rgb(127, 127, 206);
+  border-style: none;
+
+  /* -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);  */
+}
+
+/* END -- STYLES FOR BUTTON LANDING PAGE */
+
+
+
+
+
+
 
 /* .navbar {
   width: 100%;
@@ -154,6 +219,19 @@ display: flex;
   z-index: -1;
 }
 
+.logoimghome3 {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  display: inline-block;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  /* border-radius: 50%; */
+  z-index: -1;
+}
+
 /* .logocirclewrap1{
   width: 190px;
   height: 190px;
@@ -183,36 +261,7 @@ display: flex;
   box-shadow:  1px 0px 7px rgb(12, 12, 12, 0.5);
   
 }
-/* LOGO STYLES END */
 
-.descwrap1 {
-  justify-content: center;
-  display: flex;
-}
-
-.descwrap2 {
-width: 400px;
-color: white;
-font-size: 18px;
-}
-
-.loginsignupbtnhomewrap {
-  justify-content: center;
-  display: flex;
-}
-
-.loginsignupbtnhome {
-border-style: none;
-background-color: transparent;
-font-size: 22px;
-font-family: 'Lato', sans-serif;
-color: white;
-}
-.loginsignupbtnhome:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
-}
 /* -------------------------------------- */
 
 
@@ -340,9 +389,10 @@ a:link {
 /* button {
 
 } */
-  button:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
+
+  /* button:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
     transform: scale(1.2); 
 
     cursor: pointer;
@@ -351,7 +401,7 @@ a:link {
   button:active {
 
 background-color: rgb(146, 106, 146);
-  }
+  } */
 
   .cardwrapper1 {
  
