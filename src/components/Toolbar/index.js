@@ -6,7 +6,7 @@ import logo from '../../images/DS3.png';
 // import { Link } from "react-router-dom";
 
 const toolbar = props => (
-<header className="toolbar">
+<header className={props.toolBarStyle}>
     <nav className = "toolbarnav">
     <div>
         <DrawerToggleButton  click = {props.drawerClickHandler}/>
