@@ -15,23 +15,21 @@ class ProfilePage extends Component {
   state = {
     showMe: false,
     showMeUserInfo: false,
-    user: "",
-    name: "",
-    lastName: "",
-    email: "",
-    password: "",
-    loggedIn: true,
+ 
     redirectTo: null,
-    greet: "",
-    userId: "",
-    usefirstName: "",
-    uselastName: "",
-    useEmail: "",
+    
     sideDrawerOpen: false,
     modalInfoShow: false,
     modalAddTransShow: false,
     visibleOu: false,
     visibleUo: false,
+
+    slideNav: false,
+      dY:0,
+      width: 0,
+      height:0,
+      x: 0,
+      y: 0,
   };
 
   componentDidMount() {
@@ -71,7 +69,6 @@ class ProfilePage extends Component {
   addTransaction = () => {
   
   }
-
 
   hideShowUserInfo = id => {
     const newState = { ...this.state }
@@ -119,21 +116,70 @@ drawerToggleClickHandler = () => {
     this.setState(newState);
   }
 
+
+  //ONWHEEL STARTS (remember to change the refs)
+  _onWheel = (e) => {
+    const height = this.refs.profilecontainer.clientHeight
+    const deltaWye = e.nativeEvent.deltaY
+  //   console.log(this.refs)
+      console.log(e.nativeEvent)
+      console.log(height)
+    console.log(deltaWye)
+
+    if(deltaWye > 1){
+      this.setState({
+        dY: deltaWye,
+        slideNav: true
+      })
+    }else if(deltaWye < -1){ this.setState({
+      dY: deltaWye,
+      slideNav: true})
+    }
+      else{
+      this.setState({
+        dY: deltaWye,
+        slideNav: false
+      })
+    }
+
+  }
+
+  handleMouseEnter = () => {
+    const newState = {...this.state} 
+        newState.slideNav = true
+
+        this.setState(newState)
+  }
+
+  //ONWHEEL ENDS
+
   render() {
 
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop backDropClick={this.backDropClickHandler} />;
     }
+    let showClass = 'toolbar';
+    if(!this.state.slideNav) {
+showClass = 'toolbar--hidden'
+    }else {
+      showClass = 'toolbar'
+    }
 
     return (
-      <div style={{ height: '100%' }}>
+      <div className="profilecontainer" 
+      style={{ height: '100%' }}
+      ref='profilecontainer'
+      onWheel={this._onWheel}>
         <Toolbar
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           navtitle = {<div> 
             PROFILE PAGE
-          </div>}>
+          </div>}
+          handleMouseEnter={this.handleMouseEnter}
+          toolBarStyle = {showClass}
+          >
           <ul>
             <li><button onClick={this.modalInfoClikHandler}>About (Just A Modal Ready For Use)</button></li>
           </ul>
@@ -145,7 +191,6 @@ drawerToggleClickHandler = () => {
 
           
         <main style={{ marginTop: '100px' }}>
-
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
             <p>Modal Content</p>

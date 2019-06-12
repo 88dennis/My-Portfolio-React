@@ -12,19 +12,20 @@ const styles = ({
     },
     titleContainerStyle: {
         width: '300px',
-        height: '900px',
+        height: '100%',
         background: 'gray'
     }
   });
 
 class TestPage extends Component {
   state = {
-      visible: false,
+      slideNav: false,
+      dY:0,
+
       width: 0,
       height:0,
       x: 0,
       y: 0,
-      dY:0
   };
 
   // _onMouseMove = (e, ) => {
@@ -59,7 +60,6 @@ class TestPage extends Component {
 
     // YOU CAN ALSO USE ONMOUSEWHEEL DISAPPEAR
   _onWheel = (e) => {
-
     const height = this.refs.titleContainer.clientHeight
     const deltaWye = e.nativeEvent.deltaY
   //   console.log(this.refs)
@@ -67,21 +67,34 @@ class TestPage extends Component {
       console.log(height)
     console.log(deltaWye)
 
-    if(deltaWye > 0){
+    if(deltaWye > 1){
       this.setState({
         dY: deltaWye,
-          visible: true
+        slideNav: true
       })
     }else if(deltaWye < -1){ this.setState({
       dY: deltaWye,
-      visible: true})
+      slideNav: true})
     }
       else{
       this.setState({
         dY: deltaWye,
-          visible: false
+        slideNav: false
       })
     }
+  }
+
+  handleMouseEnter = () => {
+    const newState = {...this.state} 
+        newState.slideNav = true
+
+        this.setState(newState)
+  }
+
+  handleHideShowNav = () => {
+    const newState = {...this.state} 
+        newState.slideNav = !newState.slideNav
+        this.setState(newState)
   }
 
 //   _onSwipe = (e) => {
@@ -111,12 +124,9 @@ class TestPage extends Component {
 
 // }
 
-  handleHideShowNav = () => {
-    const newState = {...this.state} 
-        newState.visible = !newState.visible
+  
 
-        this.setState(newState)
-  }
+  
 
 //   handleScroll = () => {
 //     const { prevScrollpos } = this.state;
@@ -131,7 +141,7 @@ class TestPage extends Component {
   render() {
 
     let showClass = 'toolbar';
-    if(!this.state.visible) {
+    if(!this.state.slideNav) {
 showClass = 'toolbar--hidden'
     }else {
       showClass = 'toolbar'
@@ -154,6 +164,7 @@ showClass = 'toolbar--hidden'
       // onMouseMove={this._onMouseMove}
       >
 <Toolbar
+          handleMouseEnter={this.handleMouseEnter}
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           toolBarStyle = {showClass}

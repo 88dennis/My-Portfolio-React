@@ -37,7 +37,6 @@ componentDidMount() {
 }
 
   render() {
-
 let hideLogo = {
   'display': "flex" 
 };
@@ -48,21 +47,10 @@ let hideLogo2 = {
     if(!this.state.showLogo1) {
       hideLogo = { 
         'display': "none"
-
      };
       hideLogo2 = { 'display': "flex" };
     }
-
-    // if(!this.state.showLogo2) {
-    //   hideLogo2 = { display: "show" };
-    // }
-
-    // if(!this.state.showLogo2) {
-    //   hideLogo2 = {
-    //     display: "show" 
-    //   }
-    // }
-
+    
     return (
       <div style={{ height: '100%' }}>
         <div className="homepagewrap">

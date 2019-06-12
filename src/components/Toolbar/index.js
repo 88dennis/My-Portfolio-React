@@ -6,7 +6,7 @@ import logo from '../../images/DS3.png';
 // import { Link } from "react-router-dom";
 
 const toolbar = props => (
-<header className={props.toolBarStyle}>
+<header className={props.toolBarStyle} onMouseEnter={props.handleMouseEnter}>
     <nav className = "toolbarnav">
     <div>
         <DrawerToggleButton  click = {props.drawerClickHandler}/>
