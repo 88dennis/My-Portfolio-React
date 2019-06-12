@@ -32,7 +32,7 @@ handleShowLogo1 = ()  => {
   this.setState(newState)
 }
 
-componentDidMount() {
+componentWillMount() {
   setInterval(this.handleShowLogo1, 5000)
 }
 
