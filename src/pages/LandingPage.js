@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 // import { Redirect } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import logo from '../images/DS3.png';
-import logo2 from '../images/DS2.png';
+import logo from '../images/DS3BLACKNOBGNOSH.png';
+import logo2 from '../images/DS3NOBGBG.png';
 
 const styles = ({
   divStyle: {

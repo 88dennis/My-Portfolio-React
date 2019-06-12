@@ -126,16 +126,20 @@ drawerToggleClickHandler = () => {
       console.log(height)
     console.log(deltaWye)
 
-    if(deltaWye > 1){
+    if(deltaWye > 0){
       this.setState({
         dY: deltaWye,
         slideNav: true
       })
-    }else if(deltaWye < -1){ this.setState({
-      dY: deltaWye,
-      slideNav: true})
     }
-      else{
+    else if(deltaWye < -1){
+      this.setState({
+        dY: deltaWye,
+        slideNav: true
+      })
+      
+    }
+      else if(deltaWye === -1){
       this.setState({
         dY: deltaWye,
         slideNav: false
