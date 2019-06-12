@@ -67,22 +67,41 @@ class TestPage extends Component {
       console.log(height)
     console.log(deltaWye)
 
-    if(deltaWye > 1){
+    if(deltaWye > 0){
       this.setState({
         dY: deltaWye,
         slideNav: true
       })
-    }else if(deltaWye < -1){ this.setState({
-      dY: deltaWye,
-      slideNav: true})
     }
-      else{
+    else if(deltaWye < -1){
+      this.setState({
+        dY: deltaWye,
+        slideNav: true
+      })
+      
+    }
+      else if(deltaWye === -1){
       this.setState({
         dY: deltaWye,
         slideNav: false
       })
     }
+
+    // if(deltaWye < -1){
+    //   this.setState({
+    //     dY: deltaWye,
+    //     slideNav: true
+    //   })
+    // }
+    //   else{
+    //   this.setState({
+    //     dY: deltaWye,
+    //     slideNav: false
+    //   })
+    // }
   }
+
+  
 
   handleMouseEnter = () => {
     const newState = {...this.state} 
