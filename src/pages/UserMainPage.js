@@ -241,6 +241,7 @@ class UserMainPage extends Component {
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>
+          
           <AddTransForm 
           handleAddTransactionInputs={this.handleAddTransactionInputs}
           handleAddTransFormSubmit={this.handleAddTransFormSubmit}

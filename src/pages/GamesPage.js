@@ -130,7 +130,7 @@ drawerToggleClickHandler = () => {
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           navtitle = {<div> 
-            SEARCH PEOPLE
+            GAMES
           </div>}>
           <ul>
             <li><button onClick={this.modalInfoClikHandler}>About (Just A Modal Ready For Use)</button></li>

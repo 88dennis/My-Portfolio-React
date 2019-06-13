@@ -9,7 +9,7 @@ import Backdrop from "../components/Backdrop/Backdrop";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-class SearchPeoplePage extends Component {
+class ProjectsPage extends Component {
   state = {
     showMe: false,
     showMeUserInfo: false,
@@ -130,7 +130,7 @@ drawerToggleClickHandler = () => {
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           navtitle = {<div> 
-            NOTIFICATIONS
+            PROJECTS
           </div>}>
           <ul>
             <li><button onClick={this.modalInfoClikHandler}>About (Just A Modal Ready For Use)</button></li>
@@ -175,4 +175,4 @@ drawerToggleClickHandler = () => {
   }
 }
 
-export default SearchPeoplePage;
+export default ProjectsPage;

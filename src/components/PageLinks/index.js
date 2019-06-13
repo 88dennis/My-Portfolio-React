@@ -7,14 +7,14 @@ const pagelinks = props => (
     <Link to="/usermainpage"><div className={window.location.pathname === "/usermainpage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         Home</div></Link>
 
-        <Link to="/searchpeoplepage" onClick={props.backToSamePage}><div className={window.location.pathname === "/searchpeoplepage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
-      Search People </div></Link>
+        <Link to="/profilepage" onClick={props.backToSamePage}><div className={window.location.pathname === "/profilepage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+      @dennis Profile</div></Link>
 
-      <Link to="/notificationspage" onClick={props.backToSamePage}><div className={window.location.pathname === "/notificationspage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
-      Notifications </div></Link>
+        <Link to="/projectspage" onClick={props.backToSamePage}><div className={window.location.pathname === "/projectspage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+      Projects </div></Link>
 
-    <Link to="/profilepage" onClick={props.backToSamePage}><div className={window.location.pathname === "/profilepage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
-      Profile</div></Link>
+        <Link to="/gamespage" onClick={props.backToSamePage}><div className={window.location.pathname === "/gamespage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+      Games </div></Link>
 
       <Link to="/transactionhistorypage" onClick={props.backToSamePage}><div className={window.location.pathname === "/transactionhistorypage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
       Transaction History</div></Link>
