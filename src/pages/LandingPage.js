@@ -69,7 +69,7 @@ let hideLogo2 = {
           <div className="logocont">
             <div className="logocont2"  >
               <div className="logocirclewrap1" onMouseLeave= {this.handleShowLogo1} style={hideLogo2}>
-                <div className="logocirclewrap2">
+                <div className="logocirclewrap3">
                   <img className="logoimghome3" src={logo2} alt="Logo" />
                 </div>
               </div>

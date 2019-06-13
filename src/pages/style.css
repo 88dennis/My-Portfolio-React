@@ -46,11 +46,16 @@ font-size: 18px;
 }
 
 .loginsignupbtnhome {
-border-style: none;
+border-style: solid;
+border-width: 1px;
 background-color: transparent;
 font-size: 22px;
 font-family: 'Lato', sans-serif;
 color: white;
+border-radius: 50px;
+width:180px;
+padding: 0;
+
 }
 
 .loginsignupbtnhome:hover {
@@ -216,7 +221,8 @@ display: flex;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   /* border-radius: 50%; */
-  z-index: -1;
+  background: transparent;
+  z-index: 1;
 }
 
 .logoimghome3 {
@@ -229,7 +235,8 @@ display: flex;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   /* border-radius: 50%; */
-  z-index: -1;
+  z-index: 1;
+  background: transparent;
 }
 
 /* .logocirclewrap1{
@@ -245,7 +252,27 @@ display: flex;
 .logocirclewrap2{
   width: 180px;
   height: 180px;
-  background: rgba(252, 251, 253, 0.6);
+  background: rgb(204, 203, 203);
+  display: inline-block;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 0;
+  border-radius: 20px;
+  /* border-style: solid;
+  border-width: 10px; */
+  border-color: rgba(22, 20, 54, 0.5);
+  margin-top: 30px;
+  overflow: hidden;
+  box-shadow:  1px 0px 7px rgb(12, 12, 12, 0.5);
+  
+}
+
+.logocirclewrap3{
+  width: 180px;
+  height: 180px;
+  background: transparent;
   display: inline-block;
   top:50%;
   left:50%;
@@ -258,7 +285,7 @@ display: flex;
   /* border-color: rgba(22, 20, 54, 0.5); */
   margin-top: 30px;
   overflow: hidden;
-  box-shadow:  1px 0px 7px rgb(12, 12, 12, 0.5);
+  /* box-shadow:  1px 0px 7px rgb(12, 12, 12, 0.5); */
   
 }
 
