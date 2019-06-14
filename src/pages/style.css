@@ -6,6 +6,38 @@ height: 100vh;
 /* background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(77, 19, 209, 1))) fixed; */
 }
 
+
+.eyes{
+  margin-top: 120px;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.eye{
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	display: inline-block;
+  margin:10px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .eyeball{
+  width: 40px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid rgba(108, 122, 137, 1);
+} */
+
+
 /* LANDING PAGE STYLES */
 
 /* START -- STYLES FOR BUTTON LANDING PAGE */

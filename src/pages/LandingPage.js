@@ -37,6 +37,8 @@ componentWillMount() {
 }
 
   render() {
+
+    
 let hideLogo = {
   'display': "flex" 
 };

@@ -11,52 +11,50 @@ const styles = ({
       fontFamily: 'arial',
     },
     titleContainerStyle: {
-        width: '300px',
+        width: '100%',
         height: '100%',
-        background: 'gray'
+        background: 'gray',
+        position: 'relative,'
     }
   });
+
 
 class TestPage extends Component {
   state = {
       slideNav: false,
       dY:0,
-
       width: 0,
       height:0,
-      x: 0,
-      y: 0,
+      x: -50,
+      y: -50,
+
+      
   };
 
-  // _onMouseMove = (e, ) => {
-  //     const width = this.refs.titleContainer.clientWidth
-  //     const height = this.refs.titleContainer.clientHeight
-  //     const oX = Math.floor((e.nativeEvent.offsetX/width) * 100);
-  //     const oY = Math.floor((e.nativeEvent.offsetY/height) *100);
+ 
+  _onMouseMove = (e, ) => {
+      const width = this.refs.eyes.clientWidth
+      const height = this.refs.eyes.clientHeight
+      const oX = Math.floor((e.nativeEvent.clientX/width)*50);
+      const oY = Math.floor((e.nativeEvent.clientY/height)*20);
 
-  //     console.log(this.refs)
-  //       console.log(e.nativeEvent)
-  //     console.log(oX, oY)
-  //     if(oY <=10){
-  //       this.setState({
-  //           visible: true
-  //     x: oX,
-  //     y: oY
-  //       })
-  //     }else{
-  //       this.setState({
-  //           visible: false
-  //     x: oX,
-  //     y: oY
-  //       })
-  //     }
+      // console.log(this.refs)
+        console.log(e.nativeEvent)
 
-  //   // this.setState ({
-  //   //     x: oX,
-  //   //     y: oY
-  //   // })
+      console.log(oX, oY)
 
-  // }
+        this.setState({
+      x: oX,
+      y: oY
+        })
+      
+
+    // this.setState ({
+    //     x: oX,
+    //     y: oY
+    // })
+
+  }
 
     // YOU CAN ALSO USE ONMOUSEWHEEL DISAPPEAR
   _onWheel = (e) => {
@@ -166,6 +164,33 @@ showClass = 'toolbar--hidden'
       showClass = 'toolbar'
     }
 
+    // let xEye = this.state.x
+
+    // let Eye = '10px'
+
+    
+    let xEyeBall = this.state.x
+    let yEyeBall = this.state.y
+    let EyeTranslate = "translate(-" + xEyeBall + ",-" + yEyeBall + ")";
+
+    let eyeBallStyle = {
+      'width': '40px',
+      'height': '40px',
+      'background': '#000',
+      'position': 'absolute',
+      'top': yEyeBall + '%',
+      'left': xEyeBall + '%',
+      // 'right': xEyeBall + '%',
+      // 'bottom': yEyeBall + '%',
+      'transform': EyeTranslate ,
+      'borderRadius': '50%',
+      'border': '5px solid rgba(108, 122, 137, 1)'
+    }
+
+    // let xEye = this.state.x
+    // let eyeStyle = {
+    //   'top': xEye
+    // }
 //     let showClass = 'navbar';
 //     if(!this.state.visible) {
 // showClass = 'navbar navbar--hidden'
@@ -177,11 +202,15 @@ showClass = 'toolbar--hidden'
 // }
 
     return (
+
+
+      
       <div style= {styles.titleContainerStyle} className="titleContainer"
       ref='titleContainer'
       onWheel={this._onWheel}
-      // onMouseMove={this._onMouseMove}
+      onMouseMove={this._onMouseMove}
       >
+
 <Toolbar
           handleMouseEnter={this.handleMouseEnter}
           modalInfoClikHandler={this.modalInfoClikHandler}
@@ -194,6 +223,22 @@ showClass = 'toolbar--hidden'
             <li><button onClick={this.modalInfoClikHandler}>About (Just A Modal Ready For Use)</button></li>
           </ul>
         </Toolbar>
+
+       
+
+        <div ref='eyes' className="eyes"       
+        // onMouseMove={this._onMouseMove}
+        
+        >
+        <div className="eye">
+					<div className="eyeball" style={eyeBallStyle}></div>
+				</div>
+				<div className="eye">
+					<div className="eyeball" style={eyeBallStyle}></div>
+				</div>
+			</div>
+
+        
 
         {/* <nav className={showClass}
         >
@@ -210,6 +255,9 @@ showClass = 'toolbar--hidden'
 
         <button onClick = {this.handleHideShowNav} style={styles.divStyle}>SHOW HIDE</button>
           <button style={styles.divStyle}><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
+			
+
+
           </div>
     );
   }
