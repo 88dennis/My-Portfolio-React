@@ -33,16 +33,15 @@ class TestPage extends Component {
 
  
   _onMouseMove = (e, ) => {
-      const width = this.refs.eyes.clientWidth
-      const height = this.refs.eyes.clientHeight
-      const oX = Math.floor((e.nativeEvent.clientX/width)*50);
-      const oY = Math.floor((e.nativeEvent.clientY/height)*20);
+      const width = window.innerWidth
+      const height = window.innerHeight
+      const oX = Math.floor((e.nativeEvent.clientX/width)*40);
+      const oY = Math.floor((e.nativeEvent.clientY/height)*80);
 
       // console.log(this.refs)
         console.log(e.nativeEvent)
 
       console.log(oX, oY)
-
         this.setState({
       x: oX,
       y: oY
@@ -226,7 +225,7 @@ showClass = 'toolbar--hidden'
 
        
 
-        <div ref='eyes' className="eyes"       
+        <div className="eyes"       
         // onMouseMove={this._onMouseMove}
         
         >
