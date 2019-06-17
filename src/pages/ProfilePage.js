@@ -6,7 +6,7 @@ import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
 import ProfilePicture from "../components/ProfilePicture";
-import logo from '../images/DS2.png';
+import logo from '../images/Idphoto2.jpg';
 
 import { Link } from "react-router-dom";
 import "./style.css";
@@ -118,6 +118,7 @@ drawerToggleClickHandler = () => {
 
 
   //ONWHEEL STARTS (remember to change the refs)
+  // YOU CAN ALSO USE ONMOUSEWHEEL DISAPPEAR
   _onWheel = (e) => {
     const height = this.refs.profilecontainer.clientHeight
     const deltaWye = e.nativeEvent.deltaY
@@ -146,6 +147,18 @@ drawerToggleClickHandler = () => {
       })
     }
 
+    // if(deltaWye < -1){
+    //   this.setState({
+    //     dY: deltaWye,
+    //     slideNav: true
+    //   })
+    // }
+    //   else{
+    //   this.setState({
+    //     dY: deltaWye,
+    //     slideNav: false
+    //   })
+    // }
   }
 
   handleMouseEnter = () => {
@@ -172,14 +185,14 @@ showClass = 'toolbar--hidden'
 
     return (
       <div className="profilecontainer" 
-      style={{ height: '100%' }}
+      // style={{ height: '100%' }}
       ref='profilecontainer'
       onWheel={this._onWheel}>
         <Toolbar
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           navtitle = {<div> 
-            PROFILE PAGE
+            @dennis Profile
           </div>}
           handleMouseEnter={this.handleMouseEnter}
           toolBarStyle = {showClass}
@@ -203,6 +216,7 @@ showClass = 'toolbar--hidden'
           <ProfilePicture>
           <img className="profileimghome" src={logo} alt="Logo" />
           </ProfilePicture>
+
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>

@@ -1,10 +1,29 @@
+.landingPageContainer {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed;
+
+  height: 100vh;
+
+
+}
+
+.homePageContainer {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed;
+  height: 100vh;
+}
+
+.profilecontainer {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed;
+  height: 100vh;
+}
+
 .homepagewrap {
 margin: 0;
-height: 100vh;
+/* height: 100vh; */
 /* background: -webkit-gradient(linear, left top, left bottom, from(rgb(88, 89, 184)), to(rgb(109, 126, 148))) fixed; */
-
 /* background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(77, 19, 209, 1))) fixed; */
 }
+
+
 
 
 .eyes{

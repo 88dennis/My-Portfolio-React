@@ -210,7 +210,10 @@ class UserMainPage extends Component {
     }
 
     return (
-      <div style={{ height: '100%' }}>
+      <div className = "homePageContainer" 
+      // style={{ height: '100%' }}
+      
+      >
         <Toolbar
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}

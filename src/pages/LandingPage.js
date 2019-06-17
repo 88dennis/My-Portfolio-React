@@ -54,7 +54,10 @@ let hideLogo2 = {
     }
     
     return (
-      <div style={{ height: '100%' }}>
+      <div className = "landingPageContainer" 
+      // style={{ height: '100%' }}
+      
+      >
         <div className="homepagewrap">
           {/* LOGO START */}
           <div className="logocont">
