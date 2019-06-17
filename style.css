@@ -6,9 +6,11 @@ html, body {
   font-family: 'Lato', sans-serif;
   overflow: auto;
 
-
-    /* background-image: linear-gradient(to bottom right, to(rgb(65, 62, 71), rgb(32, 31, 31)); */
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgb(204, 125, 125)), to(rgb(3, 3, 3))) fixed;
+  /* background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed; */
+    
+  /* background-image: linear-gradient(to bottom right, to(rgb(65, 62, 71), rgb(32, 31, 31)); */
+  
   position: relative;
 }
 
