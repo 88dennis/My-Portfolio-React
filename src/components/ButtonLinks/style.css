@@ -1,8 +1,8 @@
-.profileWrap {
+.buttonLinksWrap {
     justify-content: center;
     display: flex;
 }
-.profileCont {
+.buttonLinksCont {
     width: 90%;
     max-width: 90%;
     background: rgb(245, 245, 245);
@@ -10,19 +10,27 @@
     overflow: auto;
 }
 
-.profileContentHeader {
+.buttonLinksHeader {
     padding: 1.5rem;
     background: darkgray;
     color:white;
 }
 
-.profileContentHeader h1 {
+.iconsimg {
+    height:50px;
+    width:50px;
+   
+}
+
+.buttonLinksHeader h1 {
     margin: 0;
     font-size: 1.25rem;
 }
 
-.profileContent {
+.buttonLinksContent {
     padding: 1.5rem;
+    display: flex;
+justify-content: center;
 }
 
 .profileButtons {
@@ -31,8 +39,24 @@
     margin-bottom: 20px;
 }
 
+.buttonLinksbtn {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border-style: none;
+    margin: 5px;
+    
+}
+
+ .buttonLinksbtn:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+    cursor: pointer;
+  }
+
 @media (min-width: 768px) {
-    .profileCont {
+    .buttonLinksCont {
         width: 40rem;
         left: calc((100% - 40rem)/ 2);
     }

@@ -5,7 +5,9 @@ import Modal from "../components/Modal/Modal";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
+import ButtonLinks from "../components/ButtonLinks";
 import ProfileContent from "../components/ProfileContent";
+
 import ProfilePicture from "../components/ProfilePicture";
 import logo from '../images/Idphoto2.jpg';
 
@@ -186,7 +188,7 @@ showClass = 'toolbar--hidden'
 
     return (
       <div className="profilecontainer" 
-      // style={{ height: '100%' }}
+      style={{ height: '100%' }}
       ref='profilecontainer'
       onWheel={this._onWheel}>
         <Toolbar
@@ -204,10 +206,10 @@ showClass = 'toolbar--hidden'
         </Toolbar>
         <SideDrawer show={this.state.sideDrawerOpen}>
         <PageLinks backToSamePage = {this.backDropClickHandler}/>
-        </SideDrawer>;
+        </SideDrawer>
           {backdrop}
 
-        <main style={{ marginTop: '100px' }}>
+        <main className="mainproiflewrapper" style={{ paddingTop: '100px', paddingBottom: '100px', margin: '0', height: '100%'}}>
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
 
           {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
@@ -218,10 +220,25 @@ showClass = 'toolbar--hidden'
           <img className="profileimghome" src={logo} alt="Logo" />
           </ProfilePicture>
 
-          <ProfileContent>
-asdasd
-            
+          <ProfileContent profilegreet= "Hello -- my name is Dennis Sarmiento.">
+          <p>Certified Web Developer working with software at the <a
+									href="https://drive.google.com/file/d/1QhZBQFCtF6s02nv2C6gX8yahuOIoBdQO/view">Full
+									Stack Bootcamp at the University of Washington in Seattle</a>. Check my applications
+								out on my <button id="portfoliomodal1">Portfolio page</button>.</p>
+<br></br>
+							<p>I've also always been an engineer at heart. Attaining a Bachelor's degree in Mechanical
+								Engineering, I am no stranger to engineering projects. I thrive working on the
+								complexities of mechanical engineering projects through my own contracting company
+								(Frontview Manpower Services Co.) and the build-outs for my fastfood business (RFC Food
+								Services).</p>
+                <br></br>
+
+							<p>My experience with running my companies lend itself well to effective teamwork and
+								strategic thinking.
+								Connect and learn more about me by clicking the icons below:</p>
           </ProfileContent>
+          <br></br>
+<ButtonLinks/>
 
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
