@@ -5,6 +5,7 @@ import Modal from "../components/Modal/Modal";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
+import ProfileContent from "../components/ProfileContent";
 import ProfilePicture from "../components/ProfilePicture";
 import logo from '../images/Idphoto2.jpg';
 
@@ -206,16 +207,21 @@ showClass = 'toolbar--hidden'
         </SideDrawer>;
           {backdrop}
 
-          
         <main style={{ marginTop: '100px' }}>
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
+
           {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
             <p>Modal Content</p>
-
           </Modal>}
+
           <ProfilePicture>
           <img className="profileimghome" src={logo} alt="Logo" />
           </ProfilePicture>
+
+          <ProfileContent>
+asdasd
+            
+          </ProfileContent>
 
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}

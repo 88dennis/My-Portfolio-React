@@ -12,7 +12,9 @@
 }
 
 .profilecontainer {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(171, 171, 175)), to(rgb(50, 50, 53))) fixed;
+
+  /* background: -webkit-gradient(linear, left top, right bottom, from(rgb(131, 112, 214)), to(rgb(123, 182, 221))) fixed; */
   height: 100vh;
 }
 
