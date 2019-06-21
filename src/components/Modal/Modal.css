@@ -4,11 +4,15 @@
     
     background: gray;
     box-shadow: 0 2px 8px rgba(0,0,0, .26);
-    position: absolute;
+    
+    position: fixed;
+
+    /* absolute is the original */
+    /* position: absolute; */
     top: 5vh;
     left: 5%;
     z-index: 200;
-    /* overflow: auto; */
+    overflow: auto;
 }
 
 .modalheader {

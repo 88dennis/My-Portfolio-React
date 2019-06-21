@@ -7,6 +7,7 @@ import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
 import ButtonLinks from "../components/ButtonLinks";
 import ProfileContent from "../components/ProfileContent";
+import ModalDms from "../components/ModalDms";
 
 import ProfilePicture from "../components/ProfilePicture";
 import logo from '../images/Idphoto2.jpg';
@@ -33,6 +34,8 @@ class ProfilePage extends Component {
       height:0,
       x: 0,
       y: 0,
+
+      showMe2: false,
   };
 
   componentDidMount() {
@@ -45,6 +48,13 @@ class ProfilePage extends Component {
   getDebts = () => {
 
   };
+
+  hideShow2 = () => {
+    const newState = { ...this.state }
+    newState.showMe2 = !newState.showMe2
+    // newState.scale = this.state.scale > 1 ? 1 : 1.5
+    this.setState(newState);
+  }
 
   handleSubmitInputChange = event => {
     const { name, value } = event.target;
@@ -256,7 +266,23 @@ showClass = 'toolbar--hidden'
           />
           </Modal>}
 
+
+          <ModalDms
+          handleAddEmployeeChange={this.handleAddEmployeeChange}
+          handleAddEmpolyeeFormSubmit={this.handleAddEmpolyeeFormSubmit}
+          id={this.state.id}
+          restaurant={this.state.restaurant}
+          name={this.state.name}
+          lastName={this.state.lastName}
+          email={this.state.email}
+          password={this.state.password}
+          //  loginemail={this.state.loginemail}
+          //  loginpassword={this.state.loginpassword}
+          showMe2={this.state.showMe2}
+          hideShow2={this.hideShow2}
+        ></ModalDms>
           
+          <button className="addempbtnmain" onClick={() => this.hideShow2()}><i className="fas fa-user-plus"></i></button>
           <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
 
           {/* MODAL ----------------------- */}
