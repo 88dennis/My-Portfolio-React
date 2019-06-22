@@ -23,8 +23,8 @@ const buttonLinks = props => (
 <button className="buttonLinksbtn"><a href="https://github.com/88dennis">
 <img className="iconsimg" src={iconGitHub} alt="linkedin-icon-8.png" /></a></button>
 
-<button className="buttonLinksbtn"><a href="https://github.com/88dennis">
-<img className="iconsimg" src={iconGitHub} alt="linkedin-icon-8.png" /></a></button>
+<button className="resumebtn" onClick={props.modalResumeClick}>
+Resume</button>
 
 </section>
 

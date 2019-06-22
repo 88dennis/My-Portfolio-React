@@ -25,6 +25,7 @@ class ProfilePage extends Component {
     sideDrawerOpen: false,
     modalInfoShow: false,
     modalAddTransShow: false,
+    modalResume: false,
     visibleOu: false,
     visibleUo: false,
 
@@ -114,6 +115,7 @@ drawerToggleClickHandler = () => {
     newState.sideDrawerOpen = false;
     newState.modalInfoShow = false;
     newState.modalAddTransShow = false;
+    newState.modalResume = false;
     this.setState(newState);
   }
 
@@ -126,6 +128,12 @@ drawerToggleClickHandler = () => {
   modalAddTransClikHandler = () => {
     const newState = { ...this.state }
     newState.modalAddTransShow = !newState.modalAddTransShow
+    this.setState(newState);
+  }
+
+  modalResumeClickHandler = () => {
+    const newState = { ...this.state }
+    newState.modalResume = !newState.modalResume
     this.setState(newState);
   }
 
@@ -221,7 +229,6 @@ showClass = 'toolbar--hidden'
 
         <main className="mainproiflewrapper" style={{ paddingTop: '100px', paddingBottom: '100px', margin: '0', height: '100%'}}>
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
-
           {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
             <p>Modal Content</p>
           </Modal>}
@@ -248,7 +255,14 @@ showClass = 'toolbar--hidden'
 								Connect and learn more about me by clicking the icons below:</p>
           </ProfileContent>
           <br></br>
-<ButtonLinks/>
+<ButtonLinks
+modalResumeClick = {this.modalResumeClickHandler}
+/>
+
+{this.state.modalResume && <Backdrop backDropClick={this.backDropClickHandler} />}
+          {this.state.modalResume && <Modal title="DENNIS RESUME" logOut goBack onGoBack={this.backDropClickHandler}>
+     RESUME CONTENT
+          </Modal>}
 
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}

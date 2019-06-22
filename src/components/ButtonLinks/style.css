@@ -8,7 +8,10 @@
     background: rgb(245, 245, 245);
     box-shadow: 0 2px 8px rgba(0,0,0, .26);
     overflow: auto;
+    padding: 0;
+
 }
+
 
 .buttonLinksHeader {
     padding: 1.5rem;
@@ -16,6 +19,14 @@
     color:white;
 }
 
+.resumebtn {
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    padding: 0;
+    margin: 5px;
+    
+}
 .iconsimg {
     height:50px;
     width:50px;
