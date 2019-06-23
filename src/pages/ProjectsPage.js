@@ -148,6 +148,12 @@ drawerToggleClickHandler = () => {
 
           </Modal>}
 
+
+
+
+
+
+
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>
@@ -163,8 +169,6 @@ drawerToggleClickHandler = () => {
           backDropClickHandler={this.backDropClickHandler}
           />
           </Modal>}
-
-          
           <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
 
           {/* MODAL ----------------------- */}

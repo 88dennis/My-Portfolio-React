@@ -162,6 +162,8 @@ class ResumePage extends Component {
     this.setState(newState)
   }
 
+  
+
   //ONWHEEL ENDS
 
   render() {

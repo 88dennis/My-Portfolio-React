@@ -29,11 +29,28 @@ class ProfilePage extends Component {
     height: 0,
     x: 0,
     y: 0,
+
+
     // showMe2: false,
   };
 
-  componentDidMount() {
-  }
+//   componentDidMount() {
+//     window.addEventListener('scroll', this.handleScroll);
+//     console.log("dennis")
+//   }
+
+//   componentWillUnmount() {
+//     window.removeEventListener('scroll', this.handleScroll);
+//   }
+
+//   handleScroll = (event) => {
+//     const newState = {...this.State}
+//     newState.scrollMe = window.scrollY
+
+// console.log(event, "dennis scroll")
+// console.log(newState.scrollMe)
+//     this.setState(newState)
+//   };
 
   getUser = () => {
 
@@ -119,7 +136,7 @@ class ProfilePage extends Component {
   _onWheel = (e) => {
     const height = this.refs.profilecontainer.clientHeight
     const deltaWye = e.nativeEvent.deltaY
-    //   console.log(this.refs)
+      console.log(this.refs)
     console.log(e.nativeEvent)
     console.log(height)
     console.log(deltaWye)
@@ -165,6 +182,8 @@ class ProfilePage extends Component {
     this.setState(newState)
   }
 
+  
+
   //ONWHEEL ENDS
 
   render() {
@@ -184,7 +203,8 @@ class ProfilePage extends Component {
       <div className="profilecontainer"
         style={{ height: '100%' }}
         ref='profilecontainer'
-        onWheel={this._onWheel}>
+        onWheel={this._onWheel}
+>
         <Toolbar
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}

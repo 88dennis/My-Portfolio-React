@@ -464,9 +464,9 @@ a:link {
   margin-top: 100px;
 }
 
-::-webkit-scrollbar { 
+/* ::-webkit-scrollbar { 
   display: none; 
-}
+} */
 
   .navbar-brand:focus {
     outline: none !important;
