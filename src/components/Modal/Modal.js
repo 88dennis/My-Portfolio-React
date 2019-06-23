@@ -1,5 +1,6 @@
 import React from 'react';
 import './Modal.css';
+import { Link } from "react-router-dom";
 
 
 const modal = props => (
@@ -17,7 +18,7 @@ const modal = props => (
 
 <section className="modalactions">
 {props.goBack &&<button onClick={props.onGoBack}>Go Back</button>}
-{props.logOut &&<button><a href="/">LOG OUT</a></button>}
+{props.logOut &&<button><Link to="/">LOG OUT</Link></button>}
 </section>
 
 </div>
