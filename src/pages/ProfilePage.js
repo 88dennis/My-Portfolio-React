@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AddTransForm from "../components/AddTransForm";
+// import AddTransForm from "../components/AddTransForm";
 import Toolbar from "../components/Toolbar";
 import Modal from "../components/Modal/Modal";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
@@ -8,12 +8,10 @@ import Backdrop from "../components/Backdrop/Backdrop";
 import ButtonLinks from "../components/ButtonLinks";
 import ProfileContent from "../components/ProfileContent";
 // import ModalDms from "../components/ModalDms";
-
 import ProfilePicture from "../components/ProfilePicture";
-
 import logo from '../images/Idphoto2.jpg';
 import resume from '../images/DennisSarmientoResumeWebDev3.pdf';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./style.css";
 
 class ProfilePage extends Component {
@@ -248,7 +246,7 @@ class ProfilePage extends Component {
           </Modal>}
           {/* RESUME PORTION ENDS */}
 
-          <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
+          {/* <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>
             <AddTransForm
@@ -262,7 +260,7 @@ class ProfilePage extends Component {
               borrowerEmail={this.state.borrowerEmail}
               backDropClickHandler={this.backDropClickHandler}
             />
-          </Modal>}
+          </Modal>} */}
 
           {/* <ModalDms
             handleAddEmployeeChange={this.handleAddEmployeeChange}
@@ -279,7 +277,7 @@ class ProfilePage extends Component {
             hideShow2={this.hideShow2}
           ></ModalDms>
 <button className="addempbtnmain" onClick={() => this.hideShow2()}><i className="fas fa-user-plus"></i></button> */}
-          <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
+          {/* <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO LANDING PAGE</Link></button> */}
 
           {/* MODAL ----------------------- */}
 
