@@ -4,11 +4,16 @@ import './Modal.css';
 
 const modal = props => (
 <div className="modal">
+<section className="modalcontent1">
+{props.resumeModal}
+</section>
 
 <header className="modalheader"><h1>{props.title}</h1></header>
 <section className="modalcontent">
 {props.children}
 </section>
+
+
 
 <section className="modalactions">
 {props.goBack &&<button onClick={props.onGoBack}>Go Back</button>}

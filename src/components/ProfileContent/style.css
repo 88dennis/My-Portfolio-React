@@ -5,15 +5,18 @@
 .profileCont {
     width: 90%;
     max-width: 90%;
-    background: rgb(245, 245, 245);
-    box-shadow: 0 2px 8px rgba(0,0,0, .26);
+    /* background: rgb(245, 245, 245); */
+    /* box-shadow: 0 2px 8px rgba(0,0,0, .26); */
+    background: transparent;
     overflow: auto;
 }
 
 .profileContentHeader {
     padding: 1.5rem;
-    background: darkgray;
-    color:white;
+    background: transparent;
+    /* background: darkgray; */
+    color:rgb(32, 31, 31);
+
 }
 
 .profileContentHeader h1 {
@@ -23,6 +26,7 @@
 
 .profileContent {
     padding: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .profileButtons {

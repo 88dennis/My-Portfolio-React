@@ -5,8 +5,9 @@
 .buttonLinksCont {
     width: 90%;
     max-width: 90%;
-    background: rgb(245, 245, 245);
-    box-shadow: 0 2px 8px rgba(0,0,0, .26);
+    /* background: rgb(245, 245, 245); */
+    background: transparent;
+    /* box-shadow: 0 2px 8px rgba(0,0,0, .26); */
     overflow: auto;
     padding: 0;
 
@@ -25,8 +26,11 @@
     height: 53px;
     padding: 0;
     margin: 5px;
-    
+    background-color: rgb(238, 75, 75);
+    color: white;
+    border-style: none;
 }
+
 .iconsimg {
     height:50px;
     width:50px;
@@ -60,6 +64,13 @@ justify-content: center;
 }
 
  .buttonLinksbtn:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+    cursor: pointer;
+  }
+
+  .resumebtn:hover {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2); 

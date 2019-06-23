@@ -3,7 +3,6 @@
 
   height: 100vh;
 
-
 }
 
 .homePageContainer {
@@ -12,14 +11,21 @@
 }
 
 .mainproiflewrapper {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(171, 171, 175)), to(rgb(50, 50, 53))) fixed;
-
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(175, 150, 92)), to(rgb(245, 224, 176))) fixed;
+  /* background-color: rgba(253, 227, 167, 1);  */
 }
+
+
 /* .profilecontainer {
  
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(131, 112, 214)), to(rgb(123, 182, 221))) fixed;
   height: 100vh;
 } */
+
+.mainresumewrapper {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(175, 150, 92)), to(rgb(245, 224, 176))) fixed;
+  /* background-color: rgba(253, 227, 167, 1);  */
+}
 
 .homepagewrap {
 margin: 0;
@@ -28,8 +34,15 @@ margin: 0;
 /* background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(77, 19, 209, 1))) fixed; */
 }
 
-
-
+.embedwrapper {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.embed {
+  background: transparent;
+}
 
 .eyes{
   margin-top: 120px;

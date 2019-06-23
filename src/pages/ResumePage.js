@@ -1,22 +1,17 @@
 import React, { Component } from "react";
-import AddTransForm from "../components/AddTransForm";
+
 import Toolbar from "../components/Toolbar";
 import Modal from "../components/Modal/Modal";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
 import ButtonLinks from "../components/ButtonLinks";
-import ProfileContent from "../components/ProfileContent";
-// import ModalDms from "../components/ModalDms";
 
-import ProfilePicture from "../components/ProfilePicture";
-
-import logo from '../images/Idphoto2.jpg';
 import resume from '../images/DennisSarmientoResumeWebDev3.pdf';
 import { Link } from "react-router-dom";
 import "./style.css";
 
-class ProfilePage extends Component {
+class ResumePage extends Component {
   state = {
     showMe: false,
     sideDrawerOpen: false,
@@ -191,7 +186,7 @@ class ProfilePage extends Component {
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           navtitle={<div>
-            @dennis Profile
+            @dennis Resume
           </div>}
           handleMouseEnter={this.handleMouseEnter}
           toolBarStyle={showClass}
@@ -205,34 +200,17 @@ class ProfilePage extends Component {
         </SideDrawer>
         {backdrop}
 
-        <main className="mainproiflewrapper" style={{ paddingTop: '100px', paddingBottom: '100px', margin: '0', height: '100%' }}>
+        <main className="mainresumewrapper" style={{ paddingTop: '100px', paddingBottom: '100px', margin: '0', height: '100%' }}>
+         
+        <div className="embedwrapper"><embed src={resume} type="application/pdf"
+				width="80%" height="900px" />
+		</div>
+
+
           {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
             <p>Modal Content</p>
           </Modal>}
-
-          <ProfilePicture>
-            <img className="profileimghome" src={logo} alt="Logo" />
-          </ProfilePicture>
-
-          <ProfileContent profilegreet="Hello -- my name is Dennis Sarmiento.">
-            <p>Certified Web Developer working with software at the <a
-              href="https://drive.google.com/file/d/1QhZBQFCtF6s02nv2C6gX8yahuOIoBdQO/view">Full
-									Stack Bootcamp at the University of Washington in Seattle</a>. Check my applications
-								out on my <a href="https://drive.google.com/file/d/1QhZBQFCtF6s02nv2C6gX8yahuOIoBdQO/view">Portfolio Page</a>.</p>
-            <br></br>
-            <p>I've also always been an engineer at heart. Attaining a Bachelor's degree in Mechanical
-              Engineering, I am no stranger to engineering projects. I thrive working on the
-              complexities of mechanical engineering projects through my own contracting company
-              (Frontview Manpower Services Co.) and the build-outs for my fastfood business (RFC Food
-								Services).</p>
-            <br></br>
-
-            <p>My experience with running my companies lend itself well to effective teamwork and
-              strategic thinking.
-								Connect and learn more about me by clicking the icons below:</p>
-          </ProfileContent>
-          <br></br>
 
           {/* RESUME PORTION  STARTS*/}
           <ButtonLinks
@@ -248,37 +226,9 @@ class ProfilePage extends Component {
           </Modal>}
           {/* RESUME PORTION ENDS */}
 
-          <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
-          {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
-          {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>
-            <AddTransForm
-              handleAddTransactionInputs={this.handleAddTransactionInputs}
-              handleAddTransFormSubmit={this.handleAddTransFormSubmit}
-              id={this.state.id}
-              borrowerName={this.state.borrowerName}
-              lentAmount={this.state.lentAmount}
-              dueDate={this.state.dueDate}
-              messageToBorrower={this.state.messageToBorrower}
-              borrowerEmail={this.state.borrowerEmail}
-              backDropClickHandler={this.backDropClickHandler}
-            />
-          </Modal>}
+          
 
-          {/* <ModalDms
-            handleAddEmployeeChange={this.handleAddEmployeeChange}
-            handleAddEmpolyeeFormSubmit={this.handleAddEmpolyeeFormSubmit}
-            id={this.state.id}
-            restaurant={this.state.restaurant}
-            name={this.state.name}
-            lastName={this.state.lastName}
-            email={this.state.email}
-            password={this.state.password}
-            //  loginemail={this.state.loginemail}
-            //  loginpassword={this.state.loginpassword}
-            showMe2={this.state.showMe2}
-            hideShow2={this.hideShow2}
-          ></ModalDms>
-<button className="addempbtnmain" onClick={() => this.hideShow2()}><i className="fas fa-user-plus"></i></button> */}
+ 
           <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
 
           {/* MODAL ----------------------- */}
@@ -289,4 +239,4 @@ class ProfilePage extends Component {
   }
 }
 
-export default ProfilePage;
+export default ResumePage;
