@@ -1,6 +1,8 @@
 .landingPageContainer {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed;
-
+  /* background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed; */
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   height: 100vh;
 
 }
