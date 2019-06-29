@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+// import { Link } from "react-router-dom";
 
 
 function ProjectCard(props) {
@@ -8,7 +9,7 @@ function ProjectCard(props) {
     
     <div className="imgcontainerwrap">
       <div className="img-container fade">
-        <img alt={props.name} src={props.image} />
+        <button className="projectbtn"><a href={props.directProjectLink} target="_blank" rel="noopener noreferrer"><img alt={props.name} src={props.image} /></a></button>
       </div>
       </div>
 
@@ -17,17 +18,18 @@ function ProjectCard(props) {
           <li>
             <strong>Name:</strong> {props.name}
           </li>
+
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <button onClick={() => props.projectLinkBtnHandler(props.id)}>Project Info</button>
           </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
+
         </ul>
+        
       </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
+      <span onClick={() => props.projectLinkBtnHandler(props.id)} className="remove">
+        ?
       </span>
+ 
     </div>
   );
 }

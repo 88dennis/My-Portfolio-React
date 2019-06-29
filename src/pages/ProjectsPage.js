@@ -8,9 +8,11 @@ import Backdrop from "../components/Backdrop/Backdrop";
 import Wrapper from "../components/Wrapper/";
 import Title from "../components/Title/";
 import ProjectCard from "../components/ProjectCard/";
+// import ButtonLinks from "../components/ButtonLinks/";
 import projects from "../projects.json";
 import { Link } from "react-router-dom";
 import "./style.css";
+
 
 
 
@@ -20,6 +22,7 @@ class ProjectsPage extends Component {
     showMeUserInfo: false,
     sideDrawerOpen: false,
     modalInfoShow: false,
+    modallProjectInfoShow: false,
     modalAddTransShow: false,
     visibleOu: false,
     visibleUo: false,
@@ -28,7 +31,12 @@ class ProjectsPage extends Component {
     height: 0,
     x: 0,
     y: 0,
-    projects
+    projects,
+    projectId:"",
+    projectName:"",
+    projectInfo:"",
+    projectModalLink:""
+    
   };
 
   componentDidMount() {
@@ -41,6 +49,25 @@ class ProjectsPage extends Component {
   getDebts = () => {
 
   };
+
+  projectLinkBtnHandler = id => {
+    const newState = { ...this.state }
+    const project = this.state.projects.find(project => project._id === id);
+    newState.projectId = id
+    newState.projectName = project.name
+    newState.projectInfo = project.projectInfo
+    newState.projectModalLink = project.projectLink
+    
+    newState.modallProjectInfoShow=!newState.modallProjectInfoShow
+    console.log(id)
+    console.log(project.name)
+    // newState.showMe = !newState.showMe
+    // newState.scale = this.state.scale > 1 ? 1 : 1.5
+
+    this.setState(newState);
+
+  }
+
 
   handleSubmitInputChange = event => {
     const { name, value } = event.target;
@@ -66,9 +93,7 @@ class ProjectsPage extends Component {
   }
 
   addTransaction = () => {
-    
   }
-
 
   hideShowUserInfo = id => {
     const newState = { ...this.state }
@@ -101,6 +126,8 @@ drawerToggleClickHandler = () => {
     newState.sideDrawerOpen = false;
     newState.modalInfoShow = false;
     newState.modalAddTransShow = false;
+    newState.modallProjectInfoShow = false;
+    
     this.setState(newState);
   }
 
@@ -213,34 +240,36 @@ drawerToggleClickHandler = () => {
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
             <p>Modal Content</p>
+          </Modal>}
 
+          {this.state.modallProjectInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
+          {this.state.modallProjectInfoShow && <Modal title={this.state.projectName} logOut goBack onGoBack={this.backDropClickHandler}>
+            <p>{this.state.projectInfo}</p>
+            <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer">Open App</a>
           </Modal>}
 
           {/* <img src={require('../images/cookie.png')} alt="logo" className="brand-logo"/> */}
 
 <Wrapper>
-
         <Title>Projects List</Title>
         {this.state.projects.map(project => (
           <ProjectCard
-            removeFriend={this.removeFriend}
-            id={project.id}
-            key={project.id}
+            projectLinkBtnHandler={this.projectLinkBtnHandler}
+            id={project._id}
+            key={project._id}
             name={project.name}
+            directProjectLink={project.projectLink}
+
+            projectName={this.state.projectName}
+            projectInfo={this.state.projectInfo}
+
             image={project.image}
-            // image2= {require('../images/cookie.png')}
             occupation={project.occupation}
             location={project.location}
           >
-          
           </ProjectCard>
         ))}
       </Wrapper>
-
-
-
-
-
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>

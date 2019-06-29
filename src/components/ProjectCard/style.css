@@ -7,6 +7,7 @@
   width: 325px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
+
 }
 
 .imgcontainerwrap {
@@ -31,6 +32,10 @@ img {
   width: 100%;
 }
 
+.projectbtn {
+  background: transparent;
+  border-style: none;
+}
 .card > .content {
   padding-left: 1rem;
   padding-right: 1rem;
