@@ -6,7 +6,7 @@ import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
 import Wrapper from "../components/Wrapper/";
-import Title from "../components/Title/";
+// import Title from "../components/Title/";
 import ProjectCard from "../components/ProjectCard/";
 // import ButtonLinks from "../components/ButtonLinks/";
 import projects from "../projects.json";
@@ -251,7 +251,7 @@ drawerToggleClickHandler = () => {
           {/* <img src={require('../images/cookie.png')} alt="logo" className="brand-logo"/> */}
 
 <Wrapper>
-        <Title>Projects List</Title>
+        {/* <Title>Projects List</Title> */}
         {this.state.projects.map(project => (
           <ProjectCard
             projectLinkBtnHandler={this.projectLinkBtnHandler}
