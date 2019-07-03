@@ -56,39 +56,39 @@
   },
   {
     "_id": 7,
-    "name": "Project",
-    "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
+    "name": "Train Scheduler",
+    "image": "https://i.imgur.com/CrZGXZo.jpg",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/Train-Scheduler.git",
+    "projectInfo": "Train Time is a train scheduler application which utilizes Firebase and Moment.JS to function",
+    "projectLink": "https://88dennis.github.io/Train-Scheduler/"
   },
   {
     "_id": 8,
-    "name": "Project",
-    "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
+    "name": "GIFS - Giphy Collector",
+    "image": "https://i.imgur.com/DLpgYwb.jpg",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/GIFS.git",
+    "projectInfo": "Type the name of your favorite villain and this app will search and show your villain giphys",
+    "projectLink": "https://88dennis.github.io/GIFS/"
   },
   {
     "_id": 9,
-    "name": "Project",
-    "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
+    "name": "Liri Node App",
+    "image": "https://i.imgur.com/ZCBnh9a.png",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/liri-node-app.git",
+    "projectInfo": "LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.",
+    "projectLink": "https://88dennis.github.io/liri-node-app/"
   },
   {
     "_id": 10,
-    "name": "Project",
-    "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
+    "name": "Bamazon",
+    "image": "https://i.imgur.com/pLHtA7q.jpg",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/Bamazon.git",
+    "projectInfo": "MySQL and Node Inventory App which guides the user what they would like to buy and updates the inventory in the catalogue every purchase",
+    "projectLink": "https://88dennis.github.io/Bamazon/"
   },
   {
     "_id": 11,
