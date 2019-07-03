@@ -16,7 +16,7 @@ function ProjectCard(props) {
       <div className="content">
         <ul>
           <li className="projectNameList">
-            <strong>Name:</strong> {props.name}
+          Name: <strong>{props.name}</strong> 
           </li>
 
           <li className="btnlinksholder">

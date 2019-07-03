@@ -22,20 +22,20 @@
   },
   {
     "id": 3,
-    "name": "Project",
-    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+    "name": "Seek - Matching App",
+    "image": "https://i.imgur.com/koQZYXh.png",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/Seek",
+    "projectInfo": "Matching App that matches a user with the person they are most likely to get along with",
+    "projectLink": "https://boiling-badlands-34403.herokuapp.com/"
   },
   {
     "id": 4,
-    "name": "Project",
-    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
+    "name": "Melos",
+    "image": "https://i.imgur.com/mvNOCOX.jpg",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
     "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "projectInfo": "Is a Music App where you search a song according to your mood, weather or ZIP Code",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
   {
