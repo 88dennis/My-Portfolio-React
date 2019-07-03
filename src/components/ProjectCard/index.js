@@ -9,7 +9,7 @@ function ProjectCard(props) {
     
     <div className="imgcontainerwrap">
       <div className="img-container fade">
-        <button className="projectbtn"><a href={props.directProjectLink} target="_blank" rel="noopener noreferrer"><img alt={props.name} src={props.image} /></a></button>
+        <button className="projectbtn"><a href={props.directProjectLink} target="_blank" rel="noopener noreferrer"><img className="projectimg" alt={props.name} src={props.image} /></a></button>
       </div>
       </div>
 
@@ -26,9 +26,9 @@ function ProjectCard(props) {
         </ul>
         
       </div>
-      <span onClick={() => props.projectLinkBtnHandler(props.id)} className="remove">
+      {/* <span onClick={() => props.projectLinkBtnHandler(props.id)} className="remove">
         ?
-      </span>
+      </span> */}
  
     </div>
   );
