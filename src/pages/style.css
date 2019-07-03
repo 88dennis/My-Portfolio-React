@@ -4,7 +4,6 @@
   linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
   linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   height: 100vh;
-
 }
 
 .homePageContainer {
@@ -16,8 +15,9 @@
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(175, 150, 92)), to(rgb(245, 224, 176))) fixed;
   /* background-color: rgba(253, 227, 167, 1);  */
 }
-
-
+.projectscontainer {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(175, 150, 92)), to(rgb(245, 224, 176))) fixed;
+}
 /* .profilecontainer {
  
   background: -webkit-gradient(linear, left top, right bottom, from(rgb(131, 112, 214)), to(rgb(123, 182, 221))) fixed;
