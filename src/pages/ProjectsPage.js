@@ -259,13 +259,13 @@ drawerToggleClickHandler = () => {
             key={project._id}
             name={project.name}
             directProjectLink={project.projectLink}
-
+            directGitHubLink={project.gitHubLink}
+            image={project.image}
+            gitimage={project.gitimage}
             projectName={this.state.projectName}
             projectInfo={this.state.projectInfo}
 
-            image={project.image}
-            occupation={project.occupation}
-            location={project.location}
+
           >
           </ProjectCard>
         ))}

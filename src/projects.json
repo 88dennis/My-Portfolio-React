@@ -3,20 +3,29 @@
     "_id": 1,
     "name": "UO Financial App",
     "image": "https://i.imgur.com/JwTGPPG.png",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/Project-2",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    
   },
   {
     "_id": 2,
     "name": "Tannin",
     "image": "https://i.imgur.com/gId2KuI.png",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
+    "projectInfo": "Tannin is a react app designed to help restaurant management educate and test their staff on wine knowledge for their current wine list. Wine is a detailed and nuanced subject that requires attention and practice to learn. Restaurants are a fast paced, hectic work environment that require a lot of quick thinking and physical labor. Tannin is designed to make studying wine as easy as possible for employees and just as easy for management to track.",
+    "projectLink": "https://tanninwineapp.herokuapp.com/"
+
+    
   },
   {
     "id": 3,
     "name": "Project",
     "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -24,6 +33,8 @@
     "id": 4,
     "name": "Project",
     "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -31,6 +42,8 @@
     "id": 5,
     "name": "Project",
     "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -38,6 +51,8 @@
     "id": 6,
     "name": "Project Project",
     "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -45,6 +60,8 @@
     "id": 7,
     "name": "Project",
     "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -52,6 +69,8 @@
     "id": 8,
     "name": "Project",
     "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -59,6 +78,8 @@
     "id": 9,
     "name": "Project",
     "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -66,6 +87,8 @@
     "id": 10,
     "name": "Project",
     "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -73,6 +96,8 @@
     "id": 11,
     "name": "Project",
     "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   },
@@ -81,6 +106,8 @@
     "name": "Project",
     "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
     "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
     "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
   }
 ]

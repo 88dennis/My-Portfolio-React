@@ -15,16 +15,17 @@ function ProjectCard(props) {
 
       <div className="content">
         <ul>
-          <li>
+          <li className="projectNameList">
             <strong>Name:</strong> {props.name}
           </li>
 
-          <li>
-            <button onClick={() => props.projectLinkBtnHandler(props.id)}>Project Info</button>
+          <li className="btnlinksholder">
+          <button className="projectInfoBtn" onClick={() => props.projectLinkBtnHandler(props.id)}>App Info</button>
+          <button className="gitHubBtnProjects"><a href={props.directGitHubLink} target="_blank" rel="noopener noreferrer"><img className="githubimg" alt={props.name} src={props.gitimage} /></a></button>
           </li>
 
         </ul>
-        
+
       </div>
       {/* <span onClick={() => props.projectLinkBtnHandler(props.id)} className="remove">
         ?
