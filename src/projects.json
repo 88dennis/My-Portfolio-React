@@ -34,27 +34,27 @@
     "name": "Melos",
     "image": "https://i.imgur.com/mvNOCOX.jpg",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
+    "gitHubLink": "https://github.com/88dennis/Project-1.git",
     "projectInfo": "Is a Music App where you search a song according to your mood, weather or ZIP Code",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "projectLink": "https://88dennis.github.io/Project-1/"
   },
   {
     "_id": 5,
-    "name": "Project",
-    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
+    "name": "Blog - Scraper App",
+    "image": "https://i.imgur.com/luaR8s5.png",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/Blog",
+    "projectInfo": "Is a WebSite Scraper you can use to get movie blogs",
+    "projectLink": "https://thawing-coast-96483.herokuapp.com/ "
   },
   {
     "_id": 6,
-    "name": "Project Project",
-    "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
+    "name": "Fat Biggies Burger",
+    "image": "https://i.imgur.com/MMaXXSB.png",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/Fat-Biggies-Burger",
+    "projectInfo": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.",
+    "projectLink": "https://pure-tundra-68960.herokuapp.com/"
   },
   {
     "_id": 7,
