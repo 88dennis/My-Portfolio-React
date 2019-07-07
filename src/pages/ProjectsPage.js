@@ -142,7 +142,6 @@ drawerToggleClickHandler = () => {
     this.setState(newState);
   }
 
-
   //ONWHEEL STARTS (remember to change the refs)
   // YOU CAN ALSO USE ONMOUSEWHEEL DISAPPEAR
   _onWheel = (e) => {
@@ -264,8 +263,6 @@ drawerToggleClickHandler = () => {
             gitimage={project.gitimage}
             projectName={this.state.projectName}
             projectInfo={this.state.projectInfo}
-
-
           >
           </ProjectCard>
         ))}

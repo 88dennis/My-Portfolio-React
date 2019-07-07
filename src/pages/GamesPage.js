@@ -1,35 +1,41 @@
 import React, { Component } from "react";
-import AddTransForm from "../components/AddTransForm";
+// import AddTransForm from "../components/AddTransForm";
 import Toolbar from "../components/Toolbar";
 import Modal from "../components/Modal/Modal";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks";
 import Backdrop from "../components/Backdrop/Backdrop";
-
-import { Link } from "react-router-dom";
+import Wrapper from "../components/Wrapper/";
+// import Title from "../components/Title/";
+import GameCard from "../components/GameCard/";
+// import ButtonLinks from "../components/ButtonLinks/";
+import games from "../games.json";
+// import { Link } from "react-router-dom";
 import "./style.css";
+import ButtonLinks from "../components/ButtonLinks";
 
-class SearchPeoplePage extends Component {
+
+class GamesPage extends Component {
   state = {
     showMe: false,
     showMeUserInfo: false,
-    user: "",
-    name: "",
-    lastName: "",
-    email: "",
-    password: "",
-    loggedIn: true,
-    redirectTo: null,
-    greet: "",
-    userId: "",
-    usefirstName: "",
-    uselastName: "",
-    useEmail: "",
     sideDrawerOpen: false,
     modalInfoShow: false,
+    modallgameInfoShow: false,
     modalAddTransShow: false,
     visibleOu: false,
     visibleUo: false,
+    dY: 0,
+    width: 0,
+    height: 0,
+    x: 0,
+    y: 0,
+    games,
+    gameId:"",
+    gameName:"",
+    gameInfo:"",
+    gameModalLink:""
+    
   };
 
   componentDidMount() {
@@ -43,6 +49,24 @@ class SearchPeoplePage extends Component {
 
   };
 
+  gameLinkBtnHandler = id => {
+    const newState = { ...this.state }
+    const game = this.state.games.find(game => game._id === id);
+    newState.gameId = id
+    newState.gameName = game.name
+    newState.gameInfo = game.gameInfo
+    newState.gameModalLink = game.gameLink
+    newState.modallgameInfoShow=!newState.modallgameInfoShow
+    console.log(id)
+    console.log(game.name)
+    // newState.showMe = !newState.showMe
+    // newState.scale = this.state.scale > 1 ? 1 : 1.5
+
+    this.setState(newState);
+
+  }
+
+
   handleSubmitInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -51,7 +75,7 @@ class SearchPeoplePage extends Component {
   }
 
   handleLogout = () => {
-
+   
   };
 
   handleAddTransactionInputs = event => {
@@ -67,9 +91,7 @@ class SearchPeoplePage extends Component {
   }
 
   addTransaction = () => {
-   
   }
-
 
   hideShowUserInfo = id => {
     const newState = { ...this.state }
@@ -102,6 +124,7 @@ drawerToggleClickHandler = () => {
     newState.sideDrawerOpen = false;
     newState.modalInfoShow = false;
     newState.modalAddTransShow = false;
+    newState.modallgameInfoShow = false;
     this.setState(newState);
   }
 
@@ -117,6 +140,61 @@ drawerToggleClickHandler = () => {
     this.setState(newState);
   }
 
+  //ONWHEEL STARTS (remember to change the refs)
+  // YOU CAN ALSO USE ONMOUSEWHEEL DISAPPEAR
+  _onWheel = (e) => {
+    const height = this.refs.gamescontainer.clientHeight
+    const deltaWye = e.nativeEvent.deltaY
+      console.log(this.refs)
+    console.log(e.nativeEvent)
+    console.log(height)
+    console.log(deltaWye)
+
+    if (deltaWye > 0) {
+      this.setState({
+        dY: deltaWye,
+        slideNav: true
+      })
+    }
+    else if (deltaWye < -1) {
+      this.setState({
+        dY: deltaWye,
+        slideNav: true
+      })
+
+    }
+    else if (deltaWye === -1) {
+      this.setState({
+        dY: deltaWye,
+        slideNav: false
+      })
+    }
+
+    // if(deltaWye < -1){
+    //   this.setState({
+    //     dY: deltaWye,
+    //     slideNav: true
+    //   })
+    // }
+    //   else{
+    //   this.setState({
+    //     dY: deltaWye,
+    //     slideNav: false
+    //   })
+    // }
+  }
+
+  handleMouseEnter = () => {
+    const newState = { ...this.state }
+    newState.slideNav = true
+
+    this.setState(newState)
+  }
+
+  
+
+  //ONWHEEL ENDS
+
   render() {
 
     let backdrop;
@@ -124,14 +202,27 @@ drawerToggleClickHandler = () => {
       backdrop = <Backdrop backDropClick={this.backDropClickHandler} />;
     }
 
+    let showClass = 'toolbar';
+    if (!this.state.slideNav) {
+      showClass = 'toolbar--hidden'
+    } else {
+      showClass = 'toolbar'
+    }
+
     return (
-      <div style={{ height: '100%' }}>
+      <div className="gamescontainer"
+      style={{height: '100%'}}
+      ref='gamescontainer'
+      onWheel={this._onWheel}>
         <Toolbar
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           navtitle = {<div> 
             GAMES
-          </div>}>
+          </div>}
+           handleMouseEnter={this.handleMouseEnter}
+           toolBarStyle={showClass}
+          >
           <ul>
             <li><button onClick={this.modalInfoClikHandler}>About (Just A Modal Ready For Use)</button></li>
           </ul>
@@ -145,10 +236,36 @@ drawerToggleClickHandler = () => {
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
             <p>Modal Content</p>
-
           </Modal>}
 
-        <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
+          {this.state.modallgameInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
+          {this.state.modallgameInfoShow && <Modal title={this.state.gameName} logOut goBack onGoBack={this.backDropClickHandler}>
+            <p>{this.state.gameInfo}</p>
+            <br></br>
+            <a href={this.state.gameModalLink} target="_blank" rel="noopener noreferrer">Open App</a>
+          </Modal>}
+
+          {/* <img src={require('../images/cookie.png')} alt="logo" className="brand-logo"/> */}
+
+<Wrapper>
+        {/* <Title>Projects List</Title> */}
+        {this.state.games.map(game => (
+          <GameCard
+          gameLinkBtnHandler={this.gameLinkBtnHandler}
+            id={game._id}
+            key={game._id}
+            name={game.name}
+            directgameLink={game.gameLink}
+            directGitHubLink={game.gitHubLink}
+            image={game.image}
+            gitimage={game.gitimage}
+            gameName={this.state.gameName}
+            gameInfo={this.state.gameInfo}
+          >
+          </GameCard>
+        ))}
+      </Wrapper>
+        {/* <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>
           <AddTransForm 
@@ -163,11 +280,13 @@ drawerToggleClickHandler = () => {
           backDropClickHandler={this.backDropClickHandler}
           />
           </Modal>}
-
-          
-          <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
+          <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button> */}
+          <ButtonLinks
+          />
 
           {/* MODAL ----------------------- */}
+
+
 
         </main>
       </div>
@@ -175,4 +294,4 @@ drawerToggleClickHandler = () => {
   }
 }
 
-export default SearchPeoplePage;
+export default GamesPage;

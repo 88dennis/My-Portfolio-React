@@ -1,0 +1,57 @@
+[
+  {
+    "_id": 1,
+    "name": "Clicky Game",
+    "image": "https://i.imgur.com/JwTGPPG.png",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/Project-2",
+    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    
+  },
+  {
+    "_id": 2,
+    "name": "Tannin",
+    "image": "https://i.imgur.com/gId2KuI.png",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
+    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+  },
+  {
+    "_id": 3,
+    "name": "Seek - Matching App",
+    "image": "https://i.imgur.com/koQZYXh.png",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/Seek",
+    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+  },
+  {
+    "_id": 4,
+    "name": "Melos",
+    "image": "https://i.imgur.com/mvNOCOX.jpg",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/Project-1.git",
+    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+  },
+  {
+    "_id": 5,
+    "name": "Blog - Scraper App",
+    "image": "https://i.imgur.com/luaR8s5.png",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/Blog",
+    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+  },
+  {
+    "_id": 6,
+    "name": "Fat Biggies Burger",
+    "image": "https://i.imgur.com/MMaXXSB.png",
+    "gitimage": "https://i.imgur.com/5uRJvFm.png",
+    "gitHubLink": "https://github.com/88dennis/Fat-Biggies-Burger",
+    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+  }
+]
