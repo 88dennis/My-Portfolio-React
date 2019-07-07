@@ -57,7 +57,6 @@ class ProjectsPage extends Component {
     newState.projectName = project.name
     newState.projectInfo = project.projectInfo
     newState.projectModalLink = project.projectLink
-    
     newState.modallProjectInfoShow=!newState.modallProjectInfoShow
     console.log(id)
     console.log(project.name)
@@ -127,7 +126,6 @@ drawerToggleClickHandler = () => {
     newState.modalInfoShow = false;
     newState.modalAddTransShow = false;
     newState.modallProjectInfoShow = false;
-    
     this.setState(newState);
   }
 
