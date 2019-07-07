@@ -8,7 +8,7 @@ import Backdrop from "../components/Backdrop/Backdrop";
 import ButtonLinks from "../components/ButtonLinks";
 
 import resume from '../images/DennisSarmientoResumeWebDev3.pdf';
-import { Link } from "react-router-dom";
+
 import "./style.css";
 
 class ResumePage extends Component {
@@ -231,7 +231,7 @@ class ResumePage extends Component {
           
 
  
-          <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
+
 
           {/* MODAL ----------------------- */}
 

@@ -31,6 +31,10 @@
     border-style: none;
 }
 
+.resumebtn > a {
+    color: white;
+}
+
 .iconsimg {
     height:50px;
     width:50px;

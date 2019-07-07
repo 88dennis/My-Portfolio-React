@@ -19,9 +19,6 @@ const pagelinks = props => (
         <Link to="/gamespage" onClick={props.backToSamePage}><div className={window.location.pathname === "/gamespage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
       Games </div></Link>
 
-      <Link to="/transactionhistorypage" onClick={props.backToSamePage}><div className={window.location.pathname === "/transactionhistorypage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
-      Transaction History</div></Link>
-
     <Link to="/settingspage"><div className={window.location.pathname === "/settingspage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
       Settings </div></Link>
 
