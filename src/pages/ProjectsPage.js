@@ -220,7 +220,7 @@ drawerToggleClickHandler = () => {
           modalInfoClikHandler={this.modalInfoClikHandler}
           drawerClickHandler={this.drawerToggleClickHandler}
           navtitle = {<div> 
-            PROJECTS
+            Projects
           </div>}
            handleMouseEnter={this.handleMouseEnter}
            toolBarStyle={showClass}
