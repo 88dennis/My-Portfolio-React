@@ -2,26 +2,26 @@
   {
     "_id": 1,
     "name": "Clicky Game",
-    "image": "https://i.imgur.com/JwTGPPG.png",
+    "image": "https://i.imgur.com/u7IzDgU.png",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/Project-2",
-    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/click-game",
+    "gameInfo": "The goal of the game is to only click each character once, with the highest possible score being 12. Every time you make a guess, the characters will reshuffle themselves.",
+    "gameLink": "https://88dennis.github.io/click-game/"
     
   },
   {
     "_id": 2,
-    "name": "Tannin",
-    "image": "https://i.imgur.com/gId2KuI.png",
+    "name": "Crystal Collector",
+    "image": "https://i.imgur.com/rwWICKf.png",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "gameLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis/unit-4-game.git",
+    "gameInfo": "Match your guessed crystals to the target number of crystals you need to collect",
+    "gameLink": "https://88dennis.github.io/unit-4-game/"
   },
   {
     "_id": 3,
-    "name": "Seek - Matching App",
-    "image": "https://i.imgur.com/koQZYXh.png",
+    "name": "",
+    "image": "",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
     "gitHubLink": "https://github.com/88dennis/Seek",
     "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
@@ -29,8 +29,8 @@
   },
   {
     "_id": 4,
-    "name": "Melos",
-    "image": "https://i.imgur.com/mvNOCOX.jpg",
+    "name": "",
+    "image": "",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
     "gitHubLink": "https://github.com/88dennis/Project-1.git",
     "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
@@ -38,8 +38,8 @@
   },
   {
     "_id": 5,
-    "name": "Blog - Scraper App",
-    "image": "https://i.imgur.com/luaR8s5.png",
+    "name": "",
+    "image": "",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
     "gitHubLink": "https://github.com/88dennis/Blog",
     "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
@@ -47,8 +47,8 @@
   },
   {
     "_id": 6,
-    "name": "Fat Biggies Burger",
-    "image": "https://i.imgur.com/MMaXXSB.png",
+    "name": "",
+    "image": "",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
     "gitHubLink": "https://github.com/88dennis/Fat-Biggies-Burger",
     "gameInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
