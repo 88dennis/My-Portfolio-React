@@ -92,20 +92,20 @@
   },
   {
     "_id": 11,
-    "name": "Project",
-    "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
+    "name": "Work in progress",
+    "image": "https://i.imgur.com/ZDw9Gd7.png",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis",
+    "projectInfo": "Work in progress",
+    "projectLink": "https://github.com/88dennis"
   },
   {
     "_id": 12,
-    "name": "Project",
-    "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
-    "projectInfo": "UO is an app for people who need to keep track of the money they have lent and borrowed from friends and family",
+    "name": "Work in progress",
+    "image": "https://i.imgur.com/ZDw9Gd7.png",
+    "projectInfo": "Work in progress",
     "gitimage": "https://i.imgur.com/5uRJvFm.png",
-    "gitHubLink": "https://github.com/88dennis/tannin-app-client",
-    "projectLink": "https://sleepy-meadow-86979.herokuapp.com/"
+    "gitHubLink": "https://github.com/88dennis",
+    "projectLink": "https://github.com/88dennis"
   }
 ]
