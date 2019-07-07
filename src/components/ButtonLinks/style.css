@@ -81,6 +81,21 @@ justify-content: center;
     cursor: pointer;
   }
 
+  /* .resumebtn:active {
+    -ms-transform: scale(.99);
+    -webkit-transform: scale(.99);
+    transform: scale(.99); 
+    cursor: pointer;
+  } */
+
+  .resumebtn:focus {
+    /* -ms-transform: scale(.99);
+    -webkit-transform: scale(.99);
+    transform: scale(.99); 
+    cursor: pointer; */
+    color: rgb(113, 113, 160);
+  }
+
 @media (min-width: 768px) {
     .buttonLinksCont {
         width: 40rem;

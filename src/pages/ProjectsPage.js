@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AddTransForm from "../components/AddTransForm";
+// import AddTransForm from "../components/AddTransForm";
 import Toolbar from "../components/Toolbar";
 import Modal from "../components/Modal/Modal";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
@@ -10,8 +10,9 @@ import Wrapper from "../components/Wrapper/";
 import ProjectCard from "../components/ProjectCard/";
 // import ButtonLinks from "../components/ButtonLinks/";
 import projects from "../projects.json";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./style.css";
+import ButtonLinks from "../components/ButtonLinks";
 
 
 
@@ -269,7 +270,7 @@ drawerToggleClickHandler = () => {
           </ProjectCard>
         ))}
       </Wrapper>
-        <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
+        {/* <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
           {this.state.modalAddTransShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modalAddTransShow && <Modal title="ADD TRANSACTION" logOut goBack onGoBack={this.backDropClickHandler}>
           <AddTransForm 
@@ -284,7 +285,9 @@ drawerToggleClickHandler = () => {
           backDropClickHandler={this.backDropClickHandler}
           />
           </Modal>}
-          <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button>
+          <button><Link to="/"> TEMPORARY BUTTON TO GO BACK TO SIGNUP/LOGIN</Link></button> */}
+          <ButtonLinks
+          />
 
           {/* MODAL ----------------------- */}
 
