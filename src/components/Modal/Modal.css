@@ -1,7 +1,7 @@
 .modal {
     width: 90%;
     max-width: 90%;
-    background: gray;
+    background: white;
     box-shadow: 0 2px 8px rgba(0,0,0, .26);
     position: fixed;
     /* absolute is the original */
@@ -14,7 +14,7 @@
 
 .modalheader {
     padding: 1rem;
-    background: darkgray;
+    background: black;
     color:white;
 }
 
@@ -31,6 +31,21 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
+}
+
+.modalbtns {
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(164, 150, 226);
+    box-shadow: 0 2px 4px rgb(92, 83, 131);
+    border-style: none;
+    color: white;
+}
+
+.modalbtns > a{
+    color: white;
 }
 
 @media (min-width: 768px) {

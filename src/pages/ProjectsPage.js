@@ -245,6 +245,7 @@ drawerToggleClickHandler = () => {
           {this.state.modallProjectInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
           {this.state.modallProjectInfoShow && <Modal title={this.state.projectName} logOut goBack onGoBack={this.backDropClickHandler}>
             <p>{this.state.projectInfo}</p>
+            <br></br>
             <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer">Open App</a>
           </Modal>}
 

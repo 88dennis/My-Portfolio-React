@@ -14,11 +14,10 @@ const modal = props => (
 {props.children}
 </section>
 
-
-
 <section className="modalactions">
-{props.goBack &&<button onClick={props.onGoBack}>Go Back</button>}
-{props.logOut &&<button><Link to="/">LOG OUT</Link></button>}
+{props.goBack &&<button className="modalbtns" onClick={props.onGoBack}>Go Back</button>}
+
+{props.logOut &&<button className="modalbtns"><Link to="/">Go to Main Page</Link></button>}
 </section>
 
 </div>
