@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 // import logo from '../images/logotrans.png';
 import "./style.css";
 
-class UserMainPage extends Component {
+class HomePage extends Component {
   state = {
     lentList: [],
     debtList: [],
@@ -237,8 +237,10 @@ class UserMainPage extends Component {
         <main style={{ marginTop: '100px' }}>
 
         {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
-          {this.state.modalInfoShow && <Modal title="ABOUT" logOut goBack onGoBack={this.backDropClickHandler}>
-            <p>Modal Content</p>
+          {this.state.modalInfoShow && <Modal title="CONTACT INFO" logOut goBack onGoBack={this.backDropClickHandler}>
+          <p>Dennis Sarmiento</p>
+            <p>571 926-3681</p>
+            <p>dennissarmiento8080@gmail.com</p>
           </Modal>}
           
         <button onClick={this.modalAddTransClikHandler}>ADD TRANSACTION</button>
@@ -333,4 +335,4 @@ class UserMainPage extends Component {
   }
 }
 
-export default UserMainPage;
+export default HomePage;

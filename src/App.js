@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPage from "./pages/LandingPage"
-import UserMainPage  from "./pages/UserMainPage";
+import HomePage  from "./pages/HomePage";
 import ProfilePage  from "./pages/ProfilePage";
 import ResumePage  from "./pages/ResumePage";
 import SettingsPage  from "./pages/SettingsPage";
@@ -21,7 +21,7 @@ function App() {
     <Router basename = {process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          <Route exact path="/usermainpage" component={UserMainPage} />
+          <Route exact path="/homepage" component={HomePage} />
           <Route exact path="/gamespage" component={GamesPage} />
           <Route exact path="/projectspage" component={ProjectsPage} />
           <Route exact path="/profilepage" component={ProfilePage} />

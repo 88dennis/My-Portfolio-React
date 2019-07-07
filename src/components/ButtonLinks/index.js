@@ -14,7 +14,7 @@ const buttonLinks = props => (
 <section className="buttonLinksContent">
 {props.children}
 
-<button className="buttonLinksbtn"><Link to="/usermainpage">
+<button className="buttonLinksbtn"><Link to="/homepage">
 <img className="iconsimg" src={iconHome} alt="cookie.png" /></Link></button>
 
 <button className="buttonLinksbtn"><a href="https://www.linkedin.com/in/dennissarmiento80/" target="_blank" rel="noopener noreferrer">

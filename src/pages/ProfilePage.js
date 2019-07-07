@@ -225,8 +225,10 @@ class ProfilePage extends Component {
 
         <main className="mainproiflewrapper" style={{ paddingTop: '100px', paddingBottom: '100px', margin: '0', height: '100%' }}>
           {this.state.modalInfoShow && <Backdrop backDropClick={this.backDropClickHandler} />}
-          {this.state.modalInfoShow && <Modal title="USER INFO" logOut goBack onGoBack={this.backDropClickHandler}>
-            <p>Modal Content</p>
+          {this.state.modalInfoShow && <Modal title="CONTACT INFO" logOut goBack onGoBack={this.backDropClickHandler}>
+          <p>Dennis Sarmiento</p>
+            <p>571 926-3681</p>
+            <p>dennissarmiento8080@gmail.com</p>
           </Modal>}
 
           <ProfilePicture>

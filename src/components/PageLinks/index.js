@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const pagelinks = props => (
   <section>
-    <Link to="/usermainpage"><div className={window.location.pathname === "/usermainpage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+    <Link to="/homepage"><div className={window.location.pathname === "/homepage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         Home</div></Link>
 
         <Link to="/profilepage" onClick={props.backToSamePage}><div className={window.location.pathname === "/profilepage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
