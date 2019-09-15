@@ -3,7 +3,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 
 
-function ProjectCard(props) {
+function GameCard(props) {
   return (
     <div className="card">
     
@@ -37,4 +37,4 @@ function ProjectCard(props) {
 
 
 
-export default ProjectCard;
+export default GameCard;
