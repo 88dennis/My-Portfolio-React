@@ -10,12 +10,10 @@ const styles = ({
     textAlign: "center",
     fontFamily: 'arial',
   },
-
   divStyle2: {
     fontSize: '20px',
     textAlign: "center"
   },
-
 });
 
 class LandingPage extends Component {
@@ -37,8 +35,6 @@ componentWillMount() {
 }
 
   render() {
-
-    
 let hideLogo = {
   'display': "flex" 
 };
@@ -103,7 +99,7 @@ let hideLogo2 = {
           <br></br>
           {/* APP DESCRIPTION ENDS */}
           <div className="loginsignupbtnhomewrap">
-            <button onMouseEnter={() => this.setState({ btnmsg: "Go Inside!" })} onMouseLeave={() => this.setState({ btnmsg: 'Welcome!' })} className="loginsignupbtnhome"><Link to="/homepage"><div className={window.location === "/homepage" ? "landpagediv landnow" : "landpagediv landnotnow"}>
+            <button onMouseEnter={() => this.setState({ btnmsg: "Go Explore!" })} onMouseLeave={() => this.setState({ btnmsg: 'Welcome!' })} className="loginsignupbtnhome"><Link to="/homepage"><div className={window.location === "/homepage" ? "landpagediv landnow" : "landpagediv landnotnow"}>
               {this.state.btnmsg}</div></Link></button>
           </div>
         </div>

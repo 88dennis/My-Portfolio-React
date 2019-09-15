@@ -94,8 +94,6 @@ class ProfilePage extends Component {
 
   }
 
-
-
   // SIDEBAR CODE STARTS
   drawerToggleClickHandler = () => {
     const newState = { ...this.state }
@@ -130,7 +128,6 @@ class ProfilePage extends Component {
     this.setState(newState);
   }
 
-
   //ONWHEEL STARTS (remember to change the refs)
   // YOU CAN ALSO USE ONMOUSEWHEEL DISAPPEAR
   _onWheel = (e) => {
@@ -152,7 +149,6 @@ class ProfilePage extends Component {
         dY: deltaWye,
         slideNav: true
       })
-
     }
     else if (deltaWye === -1) {
       this.setState({
@@ -178,7 +174,6 @@ class ProfilePage extends Component {
   handleMouseEnter = () => {
     const newState = { ...this.state }
     newState.slideNav = true
-
     this.setState(newState)
   }
 
