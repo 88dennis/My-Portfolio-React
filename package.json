@@ -5,7 +5,7 @@
   "homepage": "https://88dennis.github.io/my-portfolio-react/",
   "proxy": "http://localhost:3006/",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.0.1",
     "nodemailer": "^6.1.1",
     "passport": "^0.4.0",
